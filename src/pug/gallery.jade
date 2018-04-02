@@ -1,0 +1,16 @@
+include util
+
+mixin gallery(title, note, src, alt, url)
+  li.gallery__item
+    .gallery__item--img
+      a(href=url)
+        +img(src, alt)
+    .gallery__item--info
+      h3.gallery__item--title
+        =title
+        if note
+          small.gallery__item--new=note
+      p.gallery__item--description
+        block
+        .gallery__item--button
+          +linkbutton('サイトへ', url)

@@ -1,0 +1,37 @@
+.gallery {
+  margin: 80px auto;
+}
+
+.gallery__item {
+  margin: 60px auto;
+  display: flex;
+}
+
+.gallery__item--img {
+  display: inline-block;
+  width: 50%;
+  margin-right: 60px;
+}
+
+.gallery__item--info {
+  color: var(--gray);
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gallery__item--title {
+  font-size: 1.2rem;
+}
+
+.gallery__item--new {
+  color: var(--pink);
+  margin-left: 30px;
+}
+
+.gallery__item--description {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin: 30px auto;
+}
