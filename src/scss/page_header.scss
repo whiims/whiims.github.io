@@ -1,0 +1,14 @@
+.pageheader {
+  background: url('./images/pageheader.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageheader__logo {
+  fill: var(--black);
+  width: 160px;
+}

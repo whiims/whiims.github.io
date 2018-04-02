@@ -1,0 +1,16 @@
+.globalfooter {
+  background: var(--black);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.globalfooter__logo {
+  fill: var(--white);
+  width: 80px;
+}
+.globalfooter__copyright {
+  color: var(--white);
+  font-size: 0.7rem;
+  margin: 20px auto 10px;
+}

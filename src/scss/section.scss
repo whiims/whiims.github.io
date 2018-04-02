@@ -1,0 +1,29 @@
+.section {
+  margin: 20px calc((100% - var(--section)) / 2);
+  width: var(--section);
+}
+
+.section__header {
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.section__header--title {
+  font-size: 1.1rem;
+  margin: 20px 20px 30px;
+  line-height: var(--section__title--square);
+}
+
+.section__header--title::before {
+  content: '';
+  width: var(--section__title--square);
+  height: var(--section__title--square);
+  background: var(--green);
+  position: absolute;
+  z-index: -10;
+  left: calc(50% - var(--section__title--square) / 2);
+}
+
+.section__header--description {
+  font-size: 1.2rem;
+}

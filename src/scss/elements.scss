@@ -1,0 +1,21 @@
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ol, ul {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.button {
+  border: 5px solid var(--green);
+  padding: 2px 50px;
+  color: var(--gray);
+  font-size: 1rem;
+}
