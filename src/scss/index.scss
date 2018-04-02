@@ -49,6 +49,20 @@
   padding: 5px 50px;
 }
 
+@media(max-width: 920px) {
+  .jumbotron__about--lead {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 620px) {
+  .jumbotron__about--lead {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+
 
 // member
 
@@ -108,4 +122,39 @@
   margin-top: 20px;
   font-size: 1rem;
   line-height: 2;
+}
+
+@media(max-width: 920px) {
+  .member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member__item {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+
+  .member__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 620px) {
+  .member__item {
+    width: 100%;
+  }
+
+  .member__item--name--ja {
+    font-size: 1.2rem;
+  }
+
+  .member__item--link {
+    top: 5px;
+  }
+
+  .member__item--link--item {
+    width: 25px;
+    margin: 3px;
+  }
 }

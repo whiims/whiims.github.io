@@ -26,4 +26,22 @@
 
 .section__header--description {
   font-size: 1.2rem;
+  line-height: 2;
+}
+
+@media(max-width: 920px) {
+  :root {
+    --section: 80%;
+  }
+
+  .section {
+    margin: 20px calc((100% - var(--section)) / 2);
+    width: var(--section);
+  }
+}
+
+@media(max-width: 620px) {
+  .section__header--description {
+    font-size: 1rem;
+  }
 }
