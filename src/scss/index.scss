@@ -50,6 +50,10 @@
 }
 
 @media(max-width: 920px) {
+  .jumbotron__about {
+    background-position-x: center;
+  }
+
   .jumbotron__about--lead {
     font-size: 1.2rem;
   }
