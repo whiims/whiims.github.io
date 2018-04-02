@@ -50,6 +50,12 @@
   }
 }
 
+@media(max-width: 920px) {
+  .gallery__item--description br {
+    display: none;
+  }
+}
+
 @media(max-width: 620px) {
   .gallery__item {
     flex-direction: column;
