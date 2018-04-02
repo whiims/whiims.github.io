@@ -1,0 +1,57 @@
+include svg
+
+mixin head(title)
+  if title
+    - var title = `${title} | whiims`
+  else
+    - var title = "whiims"
+
+  if !description
+    - var description = "whiimsは作りたいものを自由気ままに作る制作チームです。"
+
+  head
+    title=title
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(name='title' content=title)
+    meta(name='author' content='Chige12_, yamasy1549')
+    meta(name='description' content=description)
+    meta(property='og:type' content='website')
+    meta(property='og:title' content=title)
+    meta(property='og:description' content=description)
+    //- TODO: ogp
+    //- meta(property='og:image' content='')
+    meta(property='og:url' content='http://whiims.github.io/')
+    meta(property='og:site_name' content=title)
+    meta(property='og:locale' content='ja_JP')
+    meta(property='fb:admins' content='1993129964276133')
+    meta(property='fb:app_id' content='1993129964276133')
+    meta(content='summary_large_image' name='twitter:card')
+    meta(content='@yamasy1549' name='twitter:site')
+
+    link(rel="stylesheet" href="./main.css")
+
+
+mixin global_header
+  header.globalheader
+    h1
+      +logo.globalheader__logo
+
+
+mixin global_footer
+  footer.globalfooter
+    +logo.globalfooter__logo
+    p.globalfooter__copyright
+      | Copyright whiims  All rights reserved.
+
+
+mixin page_header
+  header.pageheader
+    +logo.pageheader__logo
+
+
+mixin section_header(title)
+  header.section__header
+    h2.section__header--title=title
+    p.section__header--description
+      block
