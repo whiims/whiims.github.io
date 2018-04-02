@@ -35,12 +35,14 @@ mixin head(title)
 mixin global_header
   header.globalheader
     h1
-      +logo.globalheader__logo
+      a(href='/')
+        +logo.globalheader__logo
 
 
 mixin global_footer
   footer.globalfooter
-    +logo.globalfooter__logo
+    a(href='/')
+      +logo.globalfooter__logo
     p.globalfooter__copyright
       | Copyright whiims  All rights reserved.
 
