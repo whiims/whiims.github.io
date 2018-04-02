@@ -6,7 +6,15 @@ html(lang='ja')
   body
     +global_header
     main
-      +page_header
+      section#section-about
+        .jumbotron__logo
+          +logo.jumbotron__logo--logo
+        .jumbotron__about
+          p.jumbotron__about--lead
+            | 作りたいものを自由気ままに作りたい。
+            br
+            | whiimsはそんな個人的な願いから生まれた制作チームです。
+          +linkbutton('制作物を見る', './productions.html').jumbotron__about--more
       section.section#section-team-member
         +section_header('Team Member')
         ul.member

@@ -8,6 +8,7 @@ body {
   font-family: "Noto Sans JP";
   font-weight: 300;
   color: var(--black);
+  background: var(--white);
   font-size: 62.5%;
 }
 
