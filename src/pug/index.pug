@@ -1,0 +1,21 @@
+include common
+include member
+
+html(lang='ja')
+  +head
+  body
+    +global_header
+    main
+      +page_header
+      section.section#section-team-member
+        +section_header('Team Member')
+        ul.member
+          +member('ちげ', 'Chige12_', 'https://chige12.github.io')
+            | 奈良高専の5年生。
+            br
+            | デザインのブログ記事がバズってイキリオタクをしていた。ノートPCでの動画製作がそろそろ限界。好きな食べ物は寿司。
+          +member('やましー', 'yamasy1549', 'http://yamasy.info')
+            | 明石高専の5年生。
+            br
+            | 対話が苦手なので対話の研究をしている。フォントと衣装製作が好き。「スーツ着て就活したくない」で検索。
+    +global_footer
