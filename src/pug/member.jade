@@ -19,3 +19,20 @@ mixin member(name, twitter, website_url)
           +website.member__item--link--item
     p.member__item--description
       block
+
+mixin smallmember(name, twitter, website_url)
+  - twitter_url = 'https://twitter.com/' + twitter
+  ul.member__item.smallmember__item
+    .member__item--info
+      .member__item--img
+        +img('./images/' + twitter + '.png', name + 'のアイコン')
+      .member__item--name
+        span.member__item--name--ja
+          =name
+        span.member__item--name--en
+          =twitter
+      .member__item--link
+        a(href=twitter_url)
+          +twitter.member__item--link--item
+        a(href=website_url)
+          +website.member__item--link--item
