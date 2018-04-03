@@ -48,6 +48,12 @@ mixin global_footer
       +logo.globalfooter__logo
     p.globalfooter__copyright
       | Copyright whiims  All rights reserved.
+  script(async src="https://www.googletagmanager.com/gtag/js?id=UA-68509620-6")
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-68509620-6');
 
 
 mixin page_header
