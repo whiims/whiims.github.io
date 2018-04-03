@@ -1,0 +1,250 @@
+// gitjumbotron
+
+#section-git-karuta {
+  font-family: "Mplus 1p";
+}
+
+.gitjumbotron {
+  background: var(--lightbrown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gitjumbotron__img {
+  width: 60%;
+  padding: 60px;
+}
+
+.gitjumbotron__lead {
+  width: 100%;
+  background: var(--white);
+  text-align: center;
+  padding: 60px;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.8;
+}
+
+.gitjumbotron__lead--text--em {
+  color: var(--git-red);
+}
+
+@media(max-width: 920px) {
+  .gitjumbotron__img {
+    padding: 30px;
+  }
+
+  .gitjumbotron__lead {
+    font-size: 1.6rem;
+  }
+}
+
+@media(max-width: 620px) {
+  .gitjumbotron__img {
+    width: 100%;
+  }
+
+  .gitjumbotron__lead {
+    font-size: 1.1rem;
+    padding: 20px 10px;
+  }
+}
+
+
+// boothbanner
+
+.boothbanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: var(--black);
+  position: relative;
+}
+
+.boothbanner__img {
+  width: 340px;
+}
+
+.boothbanner__text {
+  display: inline-block;
+  color: var(--white);
+  border-bottom: 5px solid var(--white);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.6;
+  position: absolute;
+}
+
+@media(max-width: 620px) {
+  .boothbanner {
+    padding: 30px;
+  }
+
+  .boothbanner__text {
+    font-size: 1.4rem;
+  }
+}
+
+
+// gitsection
+
+.gitsection {
+  margin: 80px calc((100% - var(--section)) / 2);
+}
+
+.gitsection__header {
+  letter-spacing: 0;
+}
+
+.gitsection__header--title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 15px auto 40px;
+}
+
+.gitsection__header--diamond {
+  fill: var(--git-red);
+  width: 30px;
+}
+
+@media(max-width: 920px) {
+  :root {
+    --section: 90%;
+  }
+}
+
+@media(max-width: 620px) {
+  .gitsection {
+    margin: 40px calc((100% - var(--section)) / 2);
+  }
+}
+
+
+// gitsample
+
+.githover-link {
+  color: var(--black);
+}
+
+.githover {
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.githover:hover {
+  background: var(--lightbrown);
+}
+
+.gitsample__item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.gitsample__item--img {
+  max-width: 35%;
+  min-width: 35%;
+  margin: auto 60px;
+}
+
+.gitsample__item--info--title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+.gitsample__item--info--description {
+  line-height: 2;
+  font-size: 1rem;
+}
+
+@media(max-width: 920px) {
+  .gitsample__item--info--title {
+    font-size: 1.3rem;
+  }
+
+  .gitsample__item--info--description br {
+    display: none;
+  }
+}
+
+@media(max-width: 620px) {
+  .gitsample .gitsample__item:not(:last-child) {
+    border-bottom: 1px solid var(--lightbrown);
+  }
+
+  .gitsample__item {
+    flex-direction: column;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  .gitsample__item--img {
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+  }
+}
+
+
+// gitmember, smallmember
+// TODO: あとで整理
+
+.gitmember {
+  margin: 40px auto 80px;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 45%;
+}
+
+.smallmember__item {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: none;
+}
+
+@media(max-width: 920px) {
+
+  .gitmember .member__item--name--ja {
+    font-size: 1rem;
+  }
+
+  .gitmember .member__item--name--en {
+    font-size: 0.7rem;
+  }
+
+  .gitmember .member__item--link--item {
+    width: 25px;
+    margin: 3px;
+  }
+}
+
+
+// gitothers
+
+.gitotherswrapper {
+  display: flex;
+}
+
+.gitotherswrapper__item {
+  margin: 0 20px;
+}
+
+.productionsbanner {
+  width: 55%;
+}
+
+@media(max-width: 620px) {
+  .gitotherswrapper {
+    flex-direction: column;
+  }
+
+  .gitotherswrapper__item {
+    width: 100%;
+    margin: 0;
+  }
+}
