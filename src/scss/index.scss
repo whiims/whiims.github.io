@@ -35,11 +35,12 @@
 }
 
 .jumbotron__about--lead {
-    font-size: 1.4rem;
-    letter-spacing: 3px;
-    line-height: 1.7;
-    text-align: center;
-    z-index: 10;
+  font-size: 1.4rem;
+  font-family: 'NotoSansJP-Light';
+  letter-spacing: 3px;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 10;
 }
 
 .jumbotron__about--more {
@@ -49,6 +50,25 @@
     padding: 5px 50px;
 }
 
+@media(max-width: 920px) {
+  .jumbotron__about {
+    background-position-x: center;
+  }
+
+  .jumbotron__about--lead {
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 620px) {
+  .jumbotron__about--lead {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+}
+
+
+
 // member
 .member {
     margin: 40px auto 80px;
@@ -57,10 +77,10 @@
 }
 
 .member__item {
-    width: 46%;
-    padding: 30px;
-    background: var(--white);
-    box-shadow: 0px 10px 30px 3px rgba(0, 0, 16, 0.1);
+  width: 46%;
+  padding: 30px;
+  background: var(--cream);
+  box-shadow: 0px 10px 30px 5px rgba(0, 0, 16, 0.1);
 }
 
 .member__item--info {
@@ -103,7 +123,42 @@
 }
 
 .member__item--description {
-    margin-top: 20px;
-    font-size: 1rem;
-    line-height: 2;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+@media(max-width: 920px) {
+  .member {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member__item {
+    width: 80%;
+    margin-bottom: 60px;
+  }
+
+  .member__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media(max-width: 620px) {
+  .member__item {
+    width: 100%;
+  }
+
+  .member__item--name--ja {
+    font-size: 1.2rem;
+  }
+
+  .member__item--link {
+    top: 5px;
+  }
+
+  .member__item--link--item {
+    width: 25px;
+    margin: 3px;
+  }
 }

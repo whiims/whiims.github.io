@@ -1,5 +1,6 @@
 a:link,
 a:visited {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -14,8 +15,59 @@ ol, ul {
 }
 
 .button {
-  border: 5px solid var(--green);
+  position: relative;
+  border: 5px solid var(--lightgreen);
   padding: 2px 50px;
   color: var(--gray);
   font-size: 1rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+/* ボタンアニメーション擬似要素の共通スタイル */
+.border_anm::after,
+.border_anm::before,
+.border_anm_inner::after,
+.border_anm_inner::before {
+  background-color: var(--green);
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 20;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.border_anm::after { /* 左上へ配置 */
+  height: 5px;
+  left: -5px;
+  top: -5px;
+  width: 0px;
+}
+.border_anm::before {/* 右下へ配置 */
+bottom: -5px;
+height: 5px;
+right: -5px;
+width: 0px;
+}
+.border_anm_inner::after {/* 左下へ配置 */
+bottom: -5px;
+height: 0px;
+left: -5px;
+width: 5px;
+}
+.border_anm_inner::before {/* 右下へ配置 */
+height: 0px;
+right: -5px;
+top: -5px;
+width: 5px;
+}
+
+/* hover */
+.border_anm:hover::after,
+.border_anm:hover::before {
+width: 100%;
+width: calc(100% + 5px);
+}
+.border_anm:hover .border_anm_inner::after,
+.border_anm:hover .border_anm_inner::before {
+height: 100%;
+height: calc(100% + 5px);
 }

@@ -18,7 +18,7 @@
   content: '';
   width: var(--section__title--square);
   height: var(--section__title--square);
-  background: var(--green);
+  background: var(--lightgreen);
   position: absolute;
   z-index: -10;
   left: calc(50% - var(--section__title--square) / 2);
@@ -26,4 +26,22 @@
 
 .section__header--description {
   font-size: 1.2rem;
+  line-height: 2;
+}
+
+@media(max-width: 920px) {
+  :root {
+    --section: 80%;
+  }
+
+  .section {
+    margin: 20px calc((100% - var(--section)) / 2);
+    width: var(--section);
+  }
+}
+
+@media(max-width: 620px) {
+  .section__header--description {
+    font-size: 0.9rem;
+  }
 }

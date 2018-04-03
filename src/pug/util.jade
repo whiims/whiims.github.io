@@ -3,5 +3,6 @@ mixin img(src, alt)
 
 
 mixin linkbutton(text, url)
-  a.button(class=attributes.class href=url)
-    = text
+  a.button(class=attributes.class href=url).border_anm
+    span.border_anm_inner
+      = text
