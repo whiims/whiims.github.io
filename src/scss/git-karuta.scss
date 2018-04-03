@@ -172,9 +172,14 @@
 }
 
 @media(max-width: 620px) {
+  .gitsample .gitsample__item:not(:last-child) {
+    border-bottom: 1px solid var(--lightbrown);
+  }
+
   .gitsample__item {
     flex-direction: column;
-    margin-bottom: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .gitsample__item--img {
