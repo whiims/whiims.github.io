@@ -124,6 +124,20 @@
 
 // gitsample
 
+.githover-link {
+  color: var(--black);
+}
+
+.githover {
+  padding: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.githover:hover {
+  background: var(--lightbrown);
+}
+
 .gitsample__item {
   display: flex;
   margin-bottom: 30px;
