@@ -1,6 +1,6 @@
 include svg
 
-mixin head(title)
+mixin head(title, description)
   if title
     - var title = `${title} | whiims`
   else
@@ -19,8 +19,6 @@ mixin head(title)
     meta(property='og:type' content='website')
     meta(property='og:title' content=title)
     meta(property='og:description' content=description)
-    meta(property='og:image' content='https://whiims.github.io/images/whiims-ogp.jpg')
-    meta(property='og:url' content='http://whiims.github.io/')
     meta(property='og:site_name' content=title)
     meta(property='og:locale' content='ja_JP')
     meta(property='fb:admins' content='1993129964276133')
@@ -31,6 +29,12 @@ mixin head(title)
 
     if title == 'Gitコマンドかるた | whiims'
       link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css")
+      meta(property='og:image' content='https://whiims.github.io/images/git-karuta.jpg')
+      meta(property='og:url' content='http://whiims.github.io/git-karuta.html')
+    else
+      meta(property='og:image' content='https://whiims.github.io/images/whiims-ogp.jpg')
+      meta(property='og:url' content='http://whiims.github.io/')
+
     link(rel="stylesheet" href="./main.css")
 
 
