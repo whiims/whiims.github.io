@@ -2,6 +2,7 @@
 
 #section-git-karuta {
   font-family: "Mplus 1p";
+  width: 100%;
 }
 
 .gitjumbotron {
@@ -54,8 +55,8 @@
 
 // boothbanner
 
-.boothbanner {
-  width: 100vw;
+a.boothbanner {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,12 +72,32 @@
 .boothbanner__text {
   display: inline-block;
   color: var(--white);
-  border-bottom: 5px solid var(--white);
   font-size: 2rem;
   font-weight: 800;
   line-height: 1.6;
   position: absolute;
 }
+
+.boothbanner__underline {
+  width: 0;
+  height: 5px;
+  margin-top: 1.5rem;
+  background-color: var(--git-red);
+  position: absolute;
+  transition: 0.3s;
+}
+.boothbanner__underline_hover{
+  width: 17rem;
+}
+.boothbanner__underline_under {
+  width: 17rem;
+  height: 5px;
+  margin-top: 1.5rem;
+  background-color: var(--white);
+  position: absolute;
+  transition: 0.3s;
+}
+
 
 @media(max-width: 620px) {
   .boothbanner {
@@ -85,6 +106,10 @@
 
   .boothbanner__text {
     font-size: 1.4rem;
+  }
+  .boothbanner__underline {
+    width: 12rem;
+    margin-top: 1.2rem;
   }
 }
 
