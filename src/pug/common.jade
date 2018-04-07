@@ -44,6 +44,16 @@ mixin global_header
       a(href='/')
         +logo.globalheader__logo
 
+mixin scripts
+  script(src='./src/script/main.js')
+
+mixin sns
+  .sns
+    .popup シェアしよう！
+    a#twitter(href="" target="_blank")
+      +square_twiiter
+    a#facebook(href="" target="_blank")
+      +square_facebook
 
 mixin global_footer
   footer.globalfooter
@@ -57,6 +67,7 @@ mixin global_footer
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'UA-68509620-6');
+
 
 
 mixin page_header
