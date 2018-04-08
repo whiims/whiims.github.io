@@ -54,7 +54,7 @@
 
 // boothbanner
 
-a:link.boothbanner {
+a.boothbanner {
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -65,7 +65,7 @@ a:link.boothbanner {
 }
 
 .boothbanner__img {
-  width: 340px;
+  width: 320px;
 }
 
 .boothbanner__text {
