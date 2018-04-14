@@ -108,7 +108,15 @@ a.boothbanner {
     font-size: 1.4rem;
   }
   .boothbanner__underline {
+    width: 0;
+    margin-top: 1.2rem;
+  }
+  .boothbanner__underline_hover{
     width: 12rem;
+  }
+  .boothbanner__underline_under {
+    width: 12rem;
+    height: 5px;
     margin-top: 1.2rem;
   }
 }
