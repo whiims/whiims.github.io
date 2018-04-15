@@ -2,6 +2,10 @@ const popup = document.getElementsByClassName("popup")[0]
 const twitterButton = document.getElementById("twitter")
 const facebookButton = document.getElementById("facebook")
 
+const boothBannerLine = document.getElementsByClassName("boothbanner__underline")[0]
+const boothBanner = document.getElementById("boothbanner")
+
+
 twitterButton.addEventListener('mouseover', function() {
     popup.classList.toggle('share-open')
 })
@@ -14,6 +18,13 @@ facebookButton.addEventListener('mouseover', function() {
 })
 facebookButton.addEventListener('mouseout', function() {
     popup.classList.toggle('share-open')
+})
+
+boothBanner.addEventListener('mouseover', function(){
+    boothBannerLine.classList.toggle('boothbanner__underline_hover')
+})
+boothBanner.addEventListener('mouseout', function(){
+    boothBannerLine.classList.toggle('boothbanner__underline_hover')
 })
 
 Document.prototype.ready = function(callback) {

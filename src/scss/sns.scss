@@ -54,11 +54,15 @@
 @media (max-width: 767px) {
   #popup { display: none; }
   #twitter { 
-    bottom: 80px; 
+    bottom: 70px; 
     margin-bottom: 8px;
     margin-right: 0;
+    right: 3vw;
   }
-  #facebook { bottom: 40px; }
+  #facebook { 
+    bottom: 30px; 
+    right: 3vw;
+  }
 
   .sns .share-open {
     display: none;
