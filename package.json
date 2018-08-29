@@ -5,6 +5,9 @@
   "repository": "git@github.com:whiims/whiims.git",
   "author": "yamasy1549 <sanae@yamasy.info>",
   "license": "MIT",
+  "scripts": {
+    "watch": "gulp watch"
+  },
   "dependencies": {
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
