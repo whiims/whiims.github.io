@@ -11,6 +11,23 @@
   --twitter:     #55ACEE;
   --facebook:    #4063A0;
 
+  --resistor:         #CEAC94;
+  --resi-brown:       #E1D9D3;
+  --resi-lightbrown:  #EAE6E4;
+  --resi-pink:        #C1336C;
+  --resi-darkpink:    #260716;
+  --resi-yellow:      #F1C53E;
+  --resi-red:         #D82D2B;
+  --resi-orange:      #E3732E;
+  --resi-green:       #347741;
+  --resi-purple:      #7551A0;
+  --resi-gray:        #929498;
+
   --section__title--square: 60px;
   --section: 70%;
+}
+@media(max-width: 920px) {
+  :root {
+    --section: 80%;
+  }
 }

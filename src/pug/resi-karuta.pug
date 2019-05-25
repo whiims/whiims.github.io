@@ -1,0 +1,47 @@
+include common
+include member
+
+mixin resi_section_header(title)
+  header.resisection__header.section__header
+    h2.resisection__header--title=title
+
+html(lang='ja')
+  +head('抵抗カラーコードかるた', "読まれた抵抗値を素早く取れ！ 抵抗のカラーコードをゲーム感覚で覚えてしまおう！")
+  body#resi_body
+    +global_header
+    main#section-resi-karuta
+      .resi_topvisual
+        .resi_topvisual__top
+          .resi_topvisual__top_left
+            .resi_topvisual__logo
+              +img('./images/resi-karuta/resi_logo.svg')
+            .resi_topvisual__link.resi_topvisual__link--red
+              +img('./images/resi-karuta/resi_red.png').resi_topvisual__linkimg.resi_topvisual__linkimg--red
+            .resi_topvisual__link.resi_topvisual__link--orange
+              +img('./images/resi-karuta/resi_orange.png').resi_topvisual__linkimg.resi_topvisual__linkimg--orange
+          .resi_topvisual__top_right
+            .resi_topvisual__link.resi_topvisual__link--black
+              +img('./images/resi-karuta/resi_black.png').resi_topvisual__linkimg.resi_topvisual__linkimg--black
+            .resi_topvisual__link.resi_topvisual__link--green
+              +img('./images/resi-karuta/resi_green.png').resi_topvisual__linkimg.resi_topvisual__linkimg--green
+            .resi_topvisual__link.resi_topvisual__link--purple
+              +img('./images/resi-karuta/resi_purple.png').resi_topvisual__linkimg.resi_topvisual__linkimg--purple
+            .resi_topvisual__link.resi_topvisual__link--gray
+              +img('./images/resi-karuta/resi_gray.png').resi_topvisual__linkimg.resi_topvisual__linkimg--gray
+        .resi_topvisual__bottom
+          .resi_topvisual__bottom_left
+            +img('./images/resi-karuta/resi-karuta.jpg').resi_topvisual__photo
+          .resi_topvisual__bottom_right
+            .resi_topvisual__text
+              .resi_topvisual__text_catch
+                | 読まれた
+                span.resi_topvisual__text_catch--strong 抵抗値
+                | を素早く取れ！
+              .resi_topvisual__text_normal
+                p 抵抗のカラーコードを<br/>ゲーム感覚で覚えてしまおう！
+                p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
+      section.section.resisection
+
+    +sns
+    +scripts
+    +global_footer
