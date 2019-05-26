@@ -245,12 +245,19 @@ body#resi_body {
     &--one, &--three{
       width: 400px;
     }
+    &--four {
+      margin-top: -20px;
+      width: 600px;
+    }
   }
   .resiabout__text {
     color: var(--resi-darkpink);
     margin: 32px 0;
     padding-left: 18px;
     line-height: 1.8;
+    &--four {
+      padding-top: 40px;
+    }
   }
   .resiabout__text__block {
     padding: 12px 0;
@@ -295,6 +302,12 @@ body#resi_body {
       left: 28%;
       width: 340px;
       transform: rotateZ(16deg);
+    }
+    &--four {
+      top: 80px;
+      left: 6%;
+      width: 340px;
+      transform: rotateZ(-15.5deg);
     }
   }
 
