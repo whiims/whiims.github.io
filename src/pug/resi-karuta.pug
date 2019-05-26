@@ -2,7 +2,7 @@ include common
 include member
 
 mixin resi_section_header(title)
-  header.resisection__header
+  header.resisection__header&attributes(attributes)
     h2.resisection__header--title=title
 
 html(lang='ja')
@@ -42,7 +42,7 @@ html(lang='ja')
                 p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
 
       section.resisection.resisection__about
-        +resi_section_header('このかるたについて')
+        +resi_section_header('このかるたについて')#resi_about
         .resiwrapper.resiwrapper__about--one
           .resiabout__shadow.resiabout__shadow--one
             +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--one__img
@@ -59,11 +59,11 @@ html(lang='ja')
           .resiabout__shadow.resiabout__shadow--two
             +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--two__img
           .resiabout__text
-            .resiabout__text__block
+            .resi_text__block
               p 友人や先生と腕試しするのも良し！ 
               p 電気科一年生の教材として活用するのも良し！
               p ロボコンの交流会などでも盛り上がること間違いなし！
-            .resiabout__text__block
+            .resi_text__block
               p え？ 難しすぎるって？
               p 大丈夫！ そんなあなたには特別にハンデを差し上げよう！
               p このかるたには、
@@ -99,6 +99,27 @@ html(lang='ja')
             p.open_space しかも単位はオーム(Ω)だけとは限らなさそうだ……
           .resiabout__img.resiabout__img--four
             +img('./images/resi-karuta/resi_about3.png')
+
+        +resi_section_header('遊び方')#resi_play
+        .resiwrapper.resiwrapper__play--one
+          .resiplay__img.resiplay__img--one
+            +img('./images/resi-karuta/resikaruta_play.png')
+          .resiplay__text
+            .resi_text__block
+              p 普通のかるた同様、[数人のプレイヤー]＋[かるたを読む人] で遊ぶことができます。
+              P 取り札の絵が見える面(オモテ)を上にして並べたらスタート！
+            .resi_text__block
+              p 「240オーム、プラスマイナス5%」と読まれたら、素早く「赤黄茶金」のコードの札を取ろう！ チートシートを頼りに探してもOK！
+              p カラーコードが無いものも、抵抗値がわかるようになっていて、探せば見つかるはず。
+              p 最終的に取った枚数の多い人が優勝！！
+        .resiwrapper.resiwrapper__play--two
+          .resiplay__text.resiplay__text--two
+            p 読み札は、一文字ずつゆっくり読むのがコツ。
+            p 誤差だけが異なる札もあるので、誤差もちゃんと読んでね。
+            p 上から順番に読み、見つけるのに時間がかかっているようなら、
+              | <br>さらなるヒントとして「赤黄茶金」を読もう。
+          .resiplay__img.resiplay__img--two
+            +img('./images/resi-karuta/resi_play2.png')
 
     +sns
     +scripts
