@@ -236,11 +236,15 @@ body#resi_body {
 
   //resiabout
 
-  .resiwrapper__about--one {
-    margin-top: 40px;
+  .resiwrapper__about {
+    &--one{
+      margin-top: 40px;
+    }
   }
-  .resiabout__img--one{
-    width: 400px;
+  .resiabout__img{
+    &--one{
+      width: 400px;
+    }
   }
   .resiabout__text {
     color: var(--resi-darkpink);
@@ -248,16 +252,79 @@ body#resi_body {
     padding-left: 18px;
     line-height: 1.8;
   }
+  .resiabout__text__block {
+    padding: 12px 0;
+  }
+  .resi_strong {
+    position: relative;
+    font-weight: 700;
+    &:before{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 36%;
+      background: var(--resi-yellow);
+      transform: translateY(.1rem);
+      z-index: -1;
+    }
+  }
 
   .resiabout__shadow {
     position: absolute;
     z-index: -1;
     &--one {
-      top: 0;
+      top: 20px;
       left: 36%;
       width: 400px - 60px;
-      transform: rotateZ(20deg)translateY(20px);
+      transform: rotateZ(20deg);
+    }
+    &--two {
+      top: 80px;
+      left: 6%;
+      width: 600px;
+      transform: rotateZ(-17deg);
     }
   }
 
+  //resibutton
+
+  .resibutton {
+    position: relative;
+    display: block;
+    padding: 20px 40px;
+    padding-right: 110px;
+    background: var(--resi-darkpink);
+    outline: none;
+    transition: background-color .2s ease-out;
+    border: none;
+    cursor: pointer;
+    &--download {
+      margin-top: 24px;
+    }
+    &:hover{
+      background: var(--resi-pink);
+    }
+    &:active{
+      opacity: .8;
+      transform: translateY(1px);
+    }
+  }
+  .resibutton__icon {
+    position: absolute;
+    margin: auto;
+    width: 40px;
+    height: auto;
+    &--download {
+      top: 0;
+      right: 30px;
+    }
+  }
+  .resibutton__text {
+    font-family: 'M PLUS Rounded 1c';
+    color: var(--white);
+    font-size: 1.2rem;
+  }
 }

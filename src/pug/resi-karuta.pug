@@ -40,6 +40,7 @@ html(lang='ja')
               .resi_topvisual__text_normal
                 p 抵抗のカラーコードを<br/>ゲーム感覚で覚えてしまおう！
                 p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
+
       section.resisection.resisection__about
         +resi_section_header('このかるたについて')
         .resiwrapper.resiwrapper__about--one
@@ -53,7 +54,28 @@ html(lang='ja')
             p 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
             p なかなか初心者には覚えるのが大変な抵抗のカラーコード。
               | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
-
+        .resiwrapper.resiwrapper__about--two
+          .resiabout__shadow.resiabout__shadow--two
+            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--two__img
+          .resiabout__text
+            .resiabout__text__block
+              p 友人や先生と腕試しするのも良し！ 
+              p 電気科一年生の教材として活用するのも良し！
+              p ロボコンの交流会などでも盛り上がること間違いなし！
+            .resiabout__text__block
+              p え？ 難しすぎるって？
+              p 大丈夫！ そんなあなたには特別にハンデを差し上げよう！
+              p このかるたには、
+                span.resi_strong 抵抗値の読み方がわかるチートシート
+                | が付いてきます！
+              p しかも、下のボタンからいくらでもダウンロードできるよ！
+              p 何枚でも印刷して覚えて、先生や先輩に勝つのだ！！
+            button().resibutton.resibutton--download
+              .resibutton__icon.resibutton__icon--download
+                +img('./images/resi-karuta/grand.svg')
+              .resibutton__text チートシートをダウンロード
+          .resiabout__img.resiabout__img--two
+            +img('./images/resi-karuta/resi_cheatsheet.png')
     +sns
     +scripts
     +global_footer
