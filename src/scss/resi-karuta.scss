@@ -237,12 +237,12 @@ body#resi_body {
   //resiabout
 
   .resiwrapper__about {
-    &--one{
+    &--one, &--three{
       margin-top: 40px;
     }
   }
   .resiabout__img{
-    &--one{
+    &--one, &--three{
       width: 400px;
     }
   }
@@ -271,6 +271,9 @@ body#resi_body {
       z-index: -1;
     }
   }
+  .open_space {
+    margin-top: 12px;
+  }
 
   .resiabout__shadow {
     position: absolute;
@@ -278,7 +281,7 @@ body#resi_body {
     &--one {
       top: 20px;
       left: 36%;
-      width: 400px - 60px;
+      width: 340px;
       transform: rotateZ(20deg);
     }
     &--two {
@@ -286,6 +289,12 @@ body#resi_body {
       left: 6%;
       width: 600px;
       transform: rotateZ(-17deg);
+    }
+    &--three {
+      top: -10px;
+      left: 28%;
+      width: 340px;
+      transform: rotateZ(16deg);
     }
   }
 
