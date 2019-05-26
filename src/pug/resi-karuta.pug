@@ -2,7 +2,7 @@ include common
 include member
 
 mixin resi_section_header(title)
-  header.resisection__header.section__header
+  header.resisection__header
     h2.resisection__header--title=title
 
 html(lang='ja')
@@ -40,7 +40,19 @@ html(lang='ja')
               .resi_topvisual__text_normal
                 p 抵抗のカラーコードを<br/>ゲーム感覚で覚えてしまおう！
                 p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
-      section.section.resisection
+      section.resisection.resisection__about
+        +resi_section_header('このかるたについて')
+        .resiwrapper.resiwrapper__about--one
+          .resiabout__shadow.resiabout__shadow--one
+            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--one__img
+          .resiabout__img.resiabout__img--one
+            +img('./images/resi-karuta/resi_about1.png')
+          .resiabout__text
+            p このかるたの取り札には抵抗値のカラーコードが印刷されています。
+            p では左図のかるたの抵抗値は？？
+            p 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
+            p なかなか初心者には覚えるのが大変な抵抗のカラーコード。
+              | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
 
     +sns
     +scripts

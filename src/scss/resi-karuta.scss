@@ -10,6 +10,8 @@
 
 body#resi_body {
   background: var(--resi-brown);
+  font-size: 1.2rem;
+  line-height: 1.6;
 
   #section-resi-karuta {
     font-family: 'M PLUS Rounded 1c';
@@ -202,6 +204,60 @@ body#resi_body {
       margin: .6rem 0;
     }
   }
-}
+  }
+
+  //resisection
+
+  .resisection{
+    padding: 4px;
+    margin: 30px 0;
+  }
+
+  .resisection__header {
+    width: 100%;
+    background: var(--white);
+    padding: 18px 24px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  .resisection__header--title{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  //resi wrapper
+
+  .resiwrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  //resiabout
+
+  .resiwrapper__about--one {
+    margin-top: 40px;
+  }
+  .resiabout__img--one{
+    width: 400px;
+  }
+  .resiabout__text {
+    color: var(--resi-darkpink);
+    margin: 32px 0;
+    padding-left: 18px;
+    line-height: 1.8;
+  }
+
+  .resiabout__shadow {
+    position: absolute;
+    z-index: -1;
+    &--one {
+      top: 0;
+      left: 36%;
+      width: 400px - 60px;
+      transform: rotateZ(20deg)translateY(20px);
+    }
+  }
 
 }
