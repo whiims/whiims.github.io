@@ -5,6 +5,21 @@ mixin resi_section_header(title)
   header.resisection__header&attributes(attributes)
     h2.resisection__header--title=title
 
+mixin resi_shop_link(title, intax, price, link)
+  .resi_product_info&attributes(attributes)
+    .resi_product_info__title= title
+    if block
+      block
+    .resi_product_info__wrapper
+      .resi_product_info__price
+        .resi_product_info__intax= intax
+        .resi_product_info__price_data= price
+      .resi_product_info__link
+        a(href=link).resibutton.resibutton--shop
+          .resibutton__icon.resibutton__icon--shop
+            +img('./images/resi-karuta/diode.svg')
+          .resibutton__text ショップで購入
+
 html(lang='ja')
   +head('抵抗カラーコードかるた', "読まれた抵抗値を素早く取れ！ 抵抗のカラーコードをゲーム感覚で覚えてしまおう！")
   body#resi_body
@@ -14,7 +29,7 @@ html(lang='ja')
         .resi_topvisual__top
           .resi_topvisual__top_left
             .resi_topvisual__logo
-              +img('./images/resi-karuta/resi_logo.svg')
+              +img('./images/resi-karuta/resi_logo.svg','抵抗カラーコードかるた ロゴマーク')
             .resi_topvisual__link.resi_topvisual__link--red
               +img('./images/resi-karuta/resi_red.png').resi_topvisual__linkimg.resi_topvisual__linkimg--red
             .resi_topvisual__link.resi_topvisual__link--orange
@@ -30,7 +45,7 @@ html(lang='ja')
               +img('./images/resi-karuta/resi_gray.png').resi_topvisual__linkimg.resi_topvisual__linkimg--gray
         .resi_topvisual__bottom
           .resi_topvisual__bottom_left
-            +img('./images/resi-karuta/resi-karuta.jpg').resi_topvisual__photo
+            +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真').resi_topvisual__photo
           .resi_topvisual__bottom_right
             .resi_topvisual__text
               .resi_topvisual__text_catch
@@ -47,7 +62,7 @@ html(lang='ja')
           .resiabout__shadow.resiabout__shadow--one
             +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--one__img
           .resiabout__img.resiabout__img--one
-            +img('./images/resi-karuta/resi_about1.png')
+            +img('./images/resi-karuta/resi_about1.png','かるた取り札オモテ面')
           .resiabout__text
             p このかるたの取り札には抵抗値のカラーコードが印刷されています。
             p では左図のかるたの抵抗値は？？
@@ -76,13 +91,13 @@ html(lang='ja')
                 +img('./images/resi-karuta/grand.svg')
               .resibutton__text チートシートをダウンロード
           .resiabout__img.resiabout__img--two
-            +img('./images/resi-karuta/resi_cheatsheet.png')
+            +img('./images/resi-karuta/resi_cheatsheet.png','チートシートのイメージ')
 
         .resiwrapper.resiwrapper__about--three
           .resiabout__shadow.resiabout__shadow--three
             +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--three__img
           .resiabout__img.resiabout__img--three
-            +img('./images/resi-karuta/resi_about2.png')
+            +img('./images/resi-karuta/resi_about2.png','かるた取り札ウラ面')
           .resiabout__text
             p 取り札の裏面にはカラーコードの答えだけじゃなく、
             p:span.resi_strong 電気工学のミニ知識を１枚ずつ掲載！
@@ -98,12 +113,13 @@ html(lang='ja')
             p:span.resi_strong たまに変化球があるから気をつけろ！
             p.open_space しかも単位はオーム(Ω)だけとは限らなさそうだ……
           .resiabout__img.resiabout__img--four
-            +img('./images/resi-karuta/resi_about3.png')
+            +img('./images/resi-karuta/resi_about3.png','変化球なカード')
 
+      section.resisection.resisection__play
         +resi_section_header('遊び方')#resi_play
         .resiwrapper.resiwrapper__play--one
           .resiplay__img.resiplay__img--one
-            +img('./images/resi-karuta/resikaruta_play.png')
+            +img('./images/resi-karuta/resikaruta_play.png','かるたプレイ中イメージ')
           .resiplay__text
             .resi_text__block
               p 普通のかるた同様、[数人のプレイヤー]＋[かるたを読む人] で遊ぶことができます。
@@ -119,8 +135,24 @@ html(lang='ja')
             p 上から順番に読み、見つけるのに時間がかかっているようなら、
               | <br>さらなるヒントとして「赤黄茶金」を読もう。
           .resiplay__img.resiplay__img--two
-            +img('./images/resi-karuta/resi_play2.png')
+            +img('./images/resi-karuta/resi_play2.png','かるた読み札オモテ面')
 
+      section.resisection.resisection__product
+        +resi_section_header('商品情報')#resi_product
+        .resi_product_detail
+          +img('./images/resi-karuta/resi_product1.png','かるたの詳細情報')
+        +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','3,000円','')#shop_link
+          .resi_product_info__sub
+            .resi_product_info__sub__cards 
+              | 計
+              span.resi_product_info__sub__cards--stg 80
+              | 枚
+            .resi_product_info__sub__sheet チートシート付き
+        +resi_shop_link('データ版「抵抗カラーコードかるた」','（税込）','1,000円','')
+          .resi_product_info__sub
+            .resi_product_info__sub__notes
+              p 自分で印刷・切り取りが出来る方用の低価格版です。
+              p データの二次配布・販売等を禁止します。良心の範囲内でご使用ください。
     +sns
     +scripts
     +global_footer

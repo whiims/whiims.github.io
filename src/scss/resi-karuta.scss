@@ -241,7 +241,7 @@ body#resi_body {
       margin-top: 40px;
     }
     &--four {
-      margin-bottom: 60px;
+      margin-bottom: 10px;
     }
   }
   .resiabout__img{
@@ -249,17 +249,17 @@ body#resi_body {
       width: 400px;
     }
     &--four {
-      margin-top: -20px;
+      margin-top: -30px;
       width: 600px;
     }
   }
   .resiabout__text {
     color: var(--resi-darkpink);
-    margin: 32px 0;
+    margin: 30px 0;
     padding-left: 18px;
     line-height: 1.8;
     &--four {
-      padding-top: 40px;
+      padding-top: 20px;
     }
   }
   .resi_text__block {
@@ -307,7 +307,7 @@ body#resi_body {
       transform: rotateZ(16deg);
     }
     &--four {
-      top: 80px;
+      top: 60px;
       left: 6%;
       width: 340px;
       transform: rotateZ(-15.5deg);
@@ -340,21 +340,82 @@ body#resi_body {
       width: 400px;
     }
   }
-  .resiwrapper__play--two{
-    margin-bottom: 20px;
+
+  //resiproduct
+
+  .resi_product_detail {
+    padding: 22px;
+  }
+  .resi_product_info {
+    margin: 16px auto;
+    width: 760px;
+    border: 12px solid var(--resistor);
+    border-radius: 30px;
+    padding: 28px;
+    background: var(--white);
+  }
+  .resi_product_info__title {
+    margin-top: -12px;
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  .resi_product_info__sub {
+    display: flex;
+    flex-wrap: nowrap;
+    &__cards {
+      align-self: baseline;
+      &--stg {
+        font-size: 1.8rem;
+        font-weight: 700;
+        padding: 0 2px;
+      }
+    }
+    &__sheet {
+      padding-left: 16px;
+      align-self: baseline;
+    }
+    &__notes {
+      font-size: 1rem;
+    }
   }
 
-  
+  .resi_product_info__wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .resi_product_info__price {
+    flex-grow: 1;
+    font-weight: 700;
+    color: var(--resi-pink);
+    align-self: flex-end;
+    margin-top: 18px;
+  }
+  .resi_product_info__intax {
+    margin-left: -0.5rem;
+  }
+  .resi_product_info__price_data {
+    font-size: 3.4rem;
+    line-height: 1;
+    font-weight: 700;
+  }
+  .resi_product_info__link {
+    flex-shrink: 0;
+    align-self: flex-end;
+  }
+
+
 
   //resibutton
 
   .resibutton {
     position: relative;
     display: block;
+    width: fit-content;
     padding: 20px 40px;
     padding-right: 110px;
     background: var(--resi-darkpink);
     outline: none;
+    box-sizing: border-box;
     transition: background-color .2s ease-out;
     border: none;
     cursor: pointer;
@@ -371,11 +432,18 @@ body#resi_body {
   }
   .resibutton__icon {
     position: absolute;
+    display: block;
     margin: auto;
-    width: 40px;
-    height: auto;
+    height: min-content;
     &--download {
+      width: 40px;
       top: 0;
+      right: 30px;
+    }
+    &--shop {
+      width: 52px;
+      top: 0;
+      bottom: 0;
       right: 30px;
     }
   }
