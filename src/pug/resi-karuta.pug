@@ -64,11 +64,13 @@ html(lang='ja')
           .resiabout__img.resiabout__img--one
             +img('./images/resi-karuta/resi_about1.png','かるた取り札オモテ面')
           .resiabout__text
-            p このかるたの取り札には抵抗値のカラーコードが印刷されています。
-            p では左図のかるたの抵抗値は？？
-            p 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
-            p なかなか初心者には覚えるのが大変な抵抗のカラーコード。
-              | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
+            .resi_text__block
+              p このかるたの取り札には抵抗値のカラーコードが印刷されています。
+              p では左図のかるたの抵抗値は？？
+            .resi_text__block
+              p 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
+              p なかなか初心者には覚えるのが大変な抵抗のカラーコード。
+                | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
 
         .resiwrapper.resiwrapper__about--two
           .resiabout__shadow.resiabout__shadow--two
@@ -91,7 +93,7 @@ html(lang='ja')
                 +img('./images/resi-karuta/grand.svg')
               .resibutton__text チートシートをダウンロード
           .resiabout__img.resiabout__img--two
-            +img('./images/resi-karuta/resi_cheatsheet.png','チートシートのイメージ')
+            +img('./images/resi-karuta/resi_cheetsheat.png','チートシートのイメージ')
 
         .resiwrapper.resiwrapper__about--three
           .resiabout__shadow.resiabout__shadow--three
@@ -109,7 +111,7 @@ html(lang='ja')
             +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--four__img
           .resiabout__text.resiabout__text--four
             p 抵抗カラーコードかるたと言ったが、
-            p「取り札が全てカラーコード！」とは言ってないぞ……
+            p 「取り札が全てカラーコード！」とは言ってないぞ……
             p:span.resi_strong たまに変化球があるから気をつけろ！
             p.open_space しかも単位はオーム(Ω)だけとは限らなさそうだ……
           .resiabout__img.resiabout__img--four
@@ -141,7 +143,7 @@ html(lang='ja')
         +resi_section_header('商品情報')#resi_product
         .resi_product_detail
           +img('./images/resi-karuta/resi_product1.png','かるたの詳細情報')
-        +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','3,000円','')#shop_link
+        +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','2,500円','')#shop_link
           .resi_product_info__sub
             .resi_product_info__sub__cards 
               | 計
@@ -153,6 +155,60 @@ html(lang='ja')
             .resi_product_info__sub__notes
               p 自分で印刷・切り取りが出来る方用の低価格版です。
               p データの二次配布・販売等を禁止します。良心の範囲内でご使用ください。
+        .resi_product_warning
+          .resi_product_warning__box
+            +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
+            .resi_product_warning__box_text ご注意
+            +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
+          .resi_product_warning__text
+            p:span.resi_strong 「遊戯部すずき組」さんの「Resistor COLOR CODE」とは別の作品となります。
+            p 販売にあたって遊戯部すずき組さんには確認済み、快諾済みでございます。
+
+      section.resisection.resisection__news
+        +resi_section_header('News')#resi_news
+        .resinews
+          ul.resinews__list
+            li.resinews__list_item
+              a(href="https://gishohaku.dev/").resinews__list_item_wrapper
+                .resinews__list_item__img
+                  +img('./images/resi-karuta/gishohaku.png','技術同人誌博覧会')
+                .resinews__list_item__textbox
+                  .resinews__list_item__days 2019/07/27
+                  .resinews__list_item__title 技術書同人誌博覧会に出展！
+                  .resinews__list_item__description
+                    p 2019.07.27(Sat.)に東京都大田区産業プラザPiOで開催される、技術書同人誌博覧会にwhiimsとして出展します！
+                    p その他、プログラミング言語かるたや、物理版のGit学習ガイドブック等も販売します。
+          .resinews__twitter
+            .resinews__twitter_text Twitterハッシュタグも是非チェック！
+            .resinews__twitter_link
+              a(href="https://twitter.com/search?src=typd&q=%23%E6%8A%B5%E6%8A%97%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8B%E3%82%8B%E3%81%9F")
+                .resinews__twitter_link_text ＃抵抗カラーコードかるた
+            .resinews__twitter_text ご意見・ご感想待っております！
+
+      section.resisection.resisection__news
+        +resi_section_header('whiimsのその他の作品')#resi_other_products
+        .resi_others
+          .resi_others__item
+            a(href="http://yamasy.info/programming-karuta/")
+              .resi_others__item_link
+                +img('./images/resi-karuta/prokaruta.png','プログラミング言語かるた')
+                .resi_others__item_link_text プログラミング言語かるた
+          .resi_others__item
+            a(href="./git-karuta")
+              .resi_others__item_link
+                +img('./images/resi-karuta/gitkaruta.png','Gitコマンドかるた')
+                .resi_others__item_link_text Gitコマンドかるた
+          .resi_others__item.resi_others__item--small
+            .resi_others__otheritems
+              .resi_others__otheritems_circle
+              .resi_others__otheritems_circle
+              .resi_others__otheritems_circle
+            a(href="./").resi_others__whiims_link
+              .resi_others__whiims_link_text.resi_others__whiims_link_text--big whiims
+              .resi_others__whiims_link_text のサイトへ
+
+            
+
     +sns
     +scripts
     +global_footer

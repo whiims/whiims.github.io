@@ -216,7 +216,7 @@ body#resi_body {
   .resisection__header {
     width: 100%;
     background: var(--white);
-    padding: 18px 24px;
+    padding: 18px 32px;
     border-radius: 40px;
     margin-bottom: 20px;
   }
@@ -256,7 +256,7 @@ body#resi_body {
   .resiabout__text {
     color: var(--resi-darkpink);
     margin: 30px 0;
-    padding-left: 18px;
+    padding-left: 24px;
     line-height: 1.8;
     &--four {
       padding-top: 20px;
@@ -345,9 +345,10 @@ body#resi_body {
 
   .resi_product_detail {
     padding: 22px;
+    margin: 36px 0;
   }
   .resi_product_info {
-    margin: 16px auto;
+    margin: 24px auto;
     width: 760px;
     border: 12px solid var(--resistor);
     border-radius: 30px;
@@ -403,7 +404,157 @@ body#resi_body {
     align-self: flex-end;
   }
 
+  .resi_product_warning {
+    margin: 70px 0 50px;
+  }
+  .resi_product_warning__box {
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 760px;
+    padding: 4px 18px;
+    background-color: var(--resi-yellow);
+    border: 3px solid var(--resi-darkpink);
+    border-radius: 40px;
+  }
+  .resi_product_warning__box_img {
+    width: 1.4rem;
+    height: auto;
+  }
+  .resi_product_warning__box_text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0 18px;
+  }
+  .resi_product_warning__text {
+    margin: 18px 0;
+    line-height: 2;
+    width: 100%;
+    text-align: center;
+  }
 
+  //resinews
+
+  .resinews__list{
+    margin: 30px 0;
+  }
+  .resinews__list_item {
+    background-color: var(--resi-lightbrown);
+    border-radius: 32px;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: var(--white);
+    }
+  }
+  .resinews__list_item_wrapper{
+    padding: 32px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .resinews__list_item__img {
+    width: 400px;
+    height: auto;
+  }
+  .resinews__list_item__textbox{
+    padding-left: 24px;
+    color: var(--resi-darkpink);
+  }
+  .resinews__list_item__days{
+    font-size: 1rem;
+  }
+  .resinews__list_item__title {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .resinews__list_item__description {
+    margin-top: 16px;
+  }
+
+  .resinews__twitter {
+    margin-top: 36px;
+    margin-bottom: 40px;
+  }
+  .resinews__twitter_text {
+    text-align: center;
+    margin: 8px 0;
+  }
+  .resinews__twitter_link {
+    margin: auto;
+    text-align: center;
+  }
+  .resinews__twitter_link_text {
+    padding: 16px 80px;
+    border-radius: 32px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: var(--twitter);
+    color: var(--white);
+    transition: .2s ease-out;
+    &:hover{
+      color: var(--twitter);
+      background-color: var(--white);
+    }
+  }
+
+  //resi_others
+
+  .resi_others {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:flex-end;
+    margin: 30px 0;
+  }
+  .resi_others__item {
+    margin: 4px;
+  }
+  .resi_others__item_link {
+    padding: 32px;
+    padding-bottom: 24px;
+    background-color: var(--resi-lightbrown);
+    border-radius: 32px;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: var(--white);
+    }
+  }
+  .resi_others__whiims_link {
+    width: max-content;
+    padding: 32px 50px;
+    background-color: var(--resi-lightbrown);
+    border-radius: 32px;
+    transition: background-color .2s ease-out;
+    &:hover{
+      background-color: var(--white);
+    }
+  }
+  .resi_others__item_link_text {
+    font-weight: 700;
+    color: var(--resi-darkpink);
+    margin-top: 12px;
+  }
+  .resi_others__otheritems {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 18px;
+    margin-left: 24px;
+  }
+  .resi_others__otheritems_circle {
+    width: 12px;
+    height: 12px;
+    margin: 4px;
+    background-color: #F2F2F2;
+    border-radius: 12px;
+  }
+  .resi_others__whiims_link_text {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--resi-darkpink);
+    text-align: center;
+    &--big {
+      font-size: 2rem;
+    }
+  }
 
   //resibutton
 
@@ -420,7 +571,7 @@ body#resi_body {
     border: none;
     cursor: pointer;
     &--download {
-      margin-top: 24px;
+      margin-top: 60px;
     }
     &:hover{
       background: var(--resi-pink);
@@ -436,9 +587,9 @@ body#resi_body {
     margin: auto;
     height: min-content;
     &--download {
-      width: 40px;
+      width: 36px;
       top: 0;
-      right: 30px;
+      right: 24px;
     }
     &--shop {
       width: 52px;
