@@ -22,7 +22,7 @@ mixin resi_shop_link(title, intax, price, link)
 
 html(lang='ja')
   +head('抵抗カラーコードかるた', "読まれた抵抗値を素早く取れ！ 抵抗のカラーコードをゲーム感覚で覚えてしまおう！")
-  body#resi_body
+  body#resi_top
     +global_header
     main#section-resi-karuta
       .resi_topvisual
@@ -30,19 +30,25 @@ html(lang='ja')
           .resi_topvisual__top_left
             .resi_topvisual__logo
               +img('./images/resi-karuta/resi_logo.svg','抵抗カラーコードかるた ロゴマーク')
-            .resi_topvisual__link.resi_topvisual__link--red
+            a(href="#resi_about").resi_topvisual__link.resi_topvisual__link--red
               +img('./images/resi-karuta/resi_red.png').resi_topvisual__linkimg.resi_topvisual__linkimg--red
-            .resi_topvisual__link.resi_topvisual__link--orange
+              .resi_topvisual__linktext このかるたについて
+            a(href="#resi_play").resi_topvisual__link.resi_topvisual__link--orange
               +img('./images/resi-karuta/resi_orange.png').resi_topvisual__linkimg.resi_topvisual__linkimg--orange
+              .resi_topvisual__linktext 遊び方
           .resi_topvisual__top_right
-            .resi_topvisual__link.resi_topvisual__link--black
+            a(href="#resi_product").resi_topvisual__link.resi_topvisual__link--black
               +img('./images/resi-karuta/resi_black.png').resi_topvisual__linkimg.resi_topvisual__linkimg--black
-            .resi_topvisual__link.resi_topvisual__link--green
+              .resi_topvisual__linktext 商品情報
+            a(href="#resi_news").resi_topvisual__link.resi_topvisual__link--green
               +img('./images/resi-karuta/resi_green.png').resi_topvisual__linkimg.resi_topvisual__linkimg--green
-            .resi_topvisual__link.resi_topvisual__link--purple
+              .resi_topvisual__linktext News
+            a(href="#shop_link").resi_topvisual__link.resi_topvisual__link--purple
               +img('./images/resi-karuta/resi_purple.png').resi_topvisual__linkimg.resi_topvisual__linkimg--purple
-            .resi_topvisual__link.resi_topvisual__link--gray
+              .resi_topvisual__linktext 購入する
+            a(href="#resi_other_products").resi_topvisual__link.resi_topvisual__link--gray
               +img('./images/resi-karuta/resi_gray.png').resi_topvisual__linkimg.resi_topvisual__linkimg--gray
+              .resi_topvisual__linktext その他の作品をみる
         .resi_topvisual__bottom
           .resi_topvisual__bottom_left
             +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真').resi_topvisual__photo
@@ -207,8 +213,13 @@ html(lang='ja')
               .resi_others__whiims_link_text.resi_others__whiims_link_text--big whiims
               .resi_others__whiims_link_text のサイトへ
 
-            
-
+    a(href="#resi_top").linktotop
+      .linktotop_text ▲
+      .linktotop_popup TOP
+      
     +sns
     +scripts
     +global_footer
+
+    script(src="./script/smooth-scroll.polyfills.min.js")
+    script(src="./script/resi-karuta.js")

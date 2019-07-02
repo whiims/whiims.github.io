@@ -22,7 +22,7 @@
     <meta property="og:url" content="http://whiims.github.io/resi-karuta"/>
     <link rel="stylesheet" href="./main.css"/>
   </head>
-  <body id="resi_body">
+  <body id="resi_top">
     <header class="globalheader">
       <h1><a href="/">
           <svg version="1.1" viewBox="0 0 240.24 69.12" xml:space="preserve" class="globalheader__logo">
@@ -39,22 +39,15 @@
         <div class="resi_topvisual__top">
           <div class="resi_topvisual__top_left">
             <div class="resi_topvisual__logo"><img src="./images/resi-karuta/resi_logo.svg" alt="抵抗カラーコードかるた ロゴマーク"/>
-            </div>
-            <div class="resi_topvisual__link resi_topvisual__link--red"><img src="./images/resi-karuta/resi_red.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--red"/>
-            </div>
-            <div class="resi_topvisual__link resi_topvisual__link--orange"><img src="./images/resi-karuta/resi_orange.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--orange"/>
-            </div>
+            </div><a href="#resi_about" class="resi_topvisual__link resi_topvisual__link--red"><img src="./images/resi-karuta/resi_red.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--red"/>
+              <div class="resi_topvisual__linktext">このかるたについて</div></a><a href="#resi_play" class="resi_topvisual__link resi_topvisual__link--orange"><img src="./images/resi-karuta/resi_orange.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--orange"/>
+              <div class="resi_topvisual__linktext">遊び方</div></a>
           </div>
-          <div class="resi_topvisual__top_right">
-            <div class="resi_topvisual__link resi_topvisual__link--black"><img src="./images/resi-karuta/resi_black.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--black"/>
-            </div>
-            <div class="resi_topvisual__link resi_topvisual__link--green"><img src="./images/resi-karuta/resi_green.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--green"/>
-            </div>
-            <div class="resi_topvisual__link resi_topvisual__link--purple"><img src="./images/resi-karuta/resi_purple.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--purple"/>
-            </div>
-            <div class="resi_topvisual__link resi_topvisual__link--gray"><img src="./images/resi-karuta/resi_gray.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--gray"/>
-            </div>
-          </div>
+          <div class="resi_topvisual__top_right"><a href="#resi_product" class="resi_topvisual__link resi_topvisual__link--black"><img src="./images/resi-karuta/resi_black.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--black"/>
+              <div class="resi_topvisual__linktext">商品情報</div></a><a href="#resi_news" class="resi_topvisual__link resi_topvisual__link--green"><img src="./images/resi-karuta/resi_green.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--green"/>
+              <div class="resi_topvisual__linktext">News</div></a><a href="#shop_link" class="resi_topvisual__link resi_topvisual__link--purple"><img src="./images/resi-karuta/resi_purple.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--purple"/>
+              <div class="resi_topvisual__linktext">購入する</div></a><a href="#resi_other_products" class="resi_topvisual__link resi_topvisual__link--gray"><img src="./images/resi-karuta/resi_gray.png" class="resi_topvisual__linkimg resi_topvisual__linkimg--gray"/>
+              <div class="resi_topvisual__linktext">その他の作品をみる</div></a></div>
         </div>
         <div class="resi_topvisual__bottom">
           <div class="resi_topvisual__bottom_left"><img src="./images/resi-karuta/resi-karuta.jpg" alt="抵抗カラーコードかるたの写真" class="resi_topvisual__photo"/>
@@ -278,7 +271,9 @@
           </div>
         </div>
       </section>
-    </main>
+    </main><a href="#resi_top" class="linktotop">
+      <div class="linktotop_text">▲</div>
+      <div class="linktotop_popup">TOP</div></a>
     <div class="sns">
       <div class="popup">シェアしよう！</div><a id="twitter" href="" target="_blank">
         <svg version="1.1" viewBox="0 0 94 94" enable-background="new 0 0 94 94" xml:space="preserve">
@@ -320,5 +315,7 @@
       
       
     </script>
+    <script src="./script/smooth-scroll.polyfills.min.js"></script>
+    <script src="./script/resi-karuta.js"></script>
   </body>
 </html>
