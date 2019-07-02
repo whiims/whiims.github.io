@@ -49,8 +49,6 @@ mixin global_header
         +logo.globalheader__logo
 
 mixin scripts
-  script(src='./src/script/main.js')
-
   script(async src="https://www.googletagmanager.com/gtag/js?id=UA-68509620-5")
   script.
     window.dataLayer = window.dataLayer || [];
@@ -65,6 +63,7 @@ mixin sns
       +square_twiiter
     a#facebook(href="" target="_blank")
       +square_facebook
+  script(src='./src/script/sns.js')
 
 mixin global_footer
   footer.globalfooter
