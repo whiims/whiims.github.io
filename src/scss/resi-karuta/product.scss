@@ -1,0 +1,119 @@
+//resiproduct
+
+.resi_product_detail {
+  padding: 22px;
+  margin: 36px 0;
+}
+.resi_product_info {
+  margin: 24px auto;
+  width: 760px;
+  border: 12px solid var(--resistor);
+  border-radius: 30px;
+  padding: 28px;
+  background: var(--white);
+}
+.resi_product_info__title {
+  margin-top: -12px;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.resi_product_info__sub {
+  display: flex;
+  flex-wrap: nowrap;
+  &__cards {
+    align-self: baseline;
+    &--stg {
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding: 0 2px;
+    }
+  }
+  &__sheet {
+    padding-left: 16px;
+    align-self: baseline;
+  }
+  &__notes {
+    font-size: 1rem;
+  }
+}
+
+.resi_product_info__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.resi_product_info__price {
+  flex-grow: 1;
+  font-weight: 700;
+  color: var(--resi-pink);
+  align-self: flex-end;
+  margin-top: 18px;
+}
+.resi_product_info__intax {
+  margin-left: -0.5rem;
+}
+.resi_product_info__price_data {
+  font-size: 3.4rem;
+  line-height: 1;
+  font-weight: 700;
+}
+.resi_product_info__link {
+  flex-shrink: 0;
+  align-self: flex-end;
+}
+
+.resi_product_warning {
+  margin: 70px 0 50px;
+}
+.resi_product_warning__box {
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 760px;
+  padding: 4px 18px;
+  background-color: var(--resi-yellow);
+  border: 3px solid var(--resi-darkpink);
+  border-radius: 40px;
+}
+.resi_product_warning__box_img {
+  width: 1.4rem;
+  height: auto;
+}
+.resi_product_warning__box_text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 18px;
+}
+.resi_product_warning__text {
+  margin: 18px 0;
+  line-height: 2;
+  width: 100%;
+  text-align: center;
+}
+@media(max-width: 680px){
+  .resi_product_detail {
+    padding: 0;
+  }
+  .resi_product_info{
+    width: 100%;
+    border: 8px solid var(--resistor);
+    padding: 24px;
+  }
+  .resi_product_info__title{
+    font-size: 1.6rem;
+  }
+  .resi_product_info__wrapper{
+    flex-wrap: wrap;
+  }
+  .resi_product_info__price_data{
+    font-size: 2.5rem;
+    margin-right: 12px;
+  }
+  .resibutton--shop{
+    margin-top: 12px;
+  }
+
+  .resi_product_warning__box{
+    width: 100%;
+  }
+}
