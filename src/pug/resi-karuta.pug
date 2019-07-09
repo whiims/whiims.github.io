@@ -203,7 +203,7 @@ html(lang='ja')
           .resinews__twitter
             .resinews__twitter_text Twitterハッシュタグも是非チェック！
             .resinews__twitter_link
-              a(href="https://twitter.com/search?src=typd&q=%23%E6%8A%B5%E6%8A%97%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8B%E3%82%8B%E3%81%9F")
+              a(href="https://twitter.com/search?src=typd&q=%23%E6%8A%B5%E6%8A%97%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8B%E3%82%8B%E3%81%9F").resinews__twitter_link__a
                 .resinews__twitter_link_text ＃抵抗カラーコードかるた
             .resinews__twitter_text ご意見・ご感想待っております！
 
@@ -211,12 +211,12 @@ html(lang='ja')
         +resi_section_header('whiimsのその他の作品')#resi_other_products
         .resi_others
           .resi_others__item
-            a(href="http://yamasy.info/programming-karuta/")
+            a(href="http://yamasy.info/programming-karuta/").resi_others__item_a
               .resi_others__item_link
                 +img('./images/resi-karuta/prokaruta.png','プログラミング言語かるた')
                 .resi_others__item_link_text プログラミング言語かるた
           .resi_others__item
-            a(href="./git-karuta")
+            a(href="./git-karuta").resi_others__item_a
               .resi_others__item_link
                 +img('./images/resi-karuta/gitkaruta.png','Gitコマンドかるた')
                 .resi_others__item_link_text Gitコマンドかるた

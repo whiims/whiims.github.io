@@ -127,6 +127,7 @@
   text-align: center;
   color: var(--white);
   font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .resi_topvisual__bottom{
@@ -285,6 +286,29 @@
     line-height: 1.5;
     p{
       margin: .6rem 0;
+    }
+  }
+}
+@media(max-width: 420px){
+  .resi_topvisual__linktext{
+    font-size: 1rem;
+  }
+  .resi_topvisual__link{
+    &--purple,&--gray{
+      .resi_topvisual__linkimg{
+        transform: translateY(-16px);
+      }
+      .resi_topvisual__linktext {
+        transform: translateY(-6px);
+      }
+      &:hover{
+        .resi_topvisual__linkimg{
+          transform: translateY(-16px);
+        }
+        .resi_topvisual__linktext {
+          transform: translateY(-6px);
+        }
+      }
     }
   }
 }

@@ -64,13 +64,6 @@ body#resi_top {
     display: flex;
     flex-wrap: nowrap;
   }
-
-  @import "resi-karuta/topvisual";
-  @import "resi-karuta/about";
-  @import "resi-karuta/play";
-  @import "resi-karuta/product";
-  @import "resi-karuta/news";
-  @import "resi-karuta/others";
   
   //resibutton
 
@@ -153,9 +146,13 @@ body#resi_top {
       right: 3vw;
       bottom: 128px;
     }
-    
+    .linktotop_popup{
+      bottom: 170px;
+      right: calc(3vw + 1px);
+    }
   }
   @media(max-width: 680px){
+    font-size: 1.1rem;
     br {
       display: none;
     }
@@ -167,4 +164,20 @@ body#resi_top {
       }
     }
   }
+  @media(max-width: 460px){
+    .resibutton--download {
+      padding:16px 20px;
+      padding-right: 60px;
+    }
+    .resibutton__icon--download{
+      width: 30px;
+      right: 16px;
+    }
+  }
+  @import "resi-karuta/topvisual";
+  @import "resi-karuta/about";
+  @import "resi-karuta/play";
+  @import "resi-karuta/product";
+  @import "resi-karuta/news";
+  @import "resi-karuta/others";
 }

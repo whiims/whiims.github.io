@@ -90,12 +90,35 @@
   width: 100%;
   text-align: center;
 }
+@media(max-width: 820px){
+  .resi_product_detail{
+    padding: 0;
+  }
+  .resi_product_info{
+    width: 100%;
+    border: 10px solid var(--resistor);
+  }
+  .resi_product_info__title{
+    font-size: 2rem;
+  }
+  .resi_product_info__price_data{
+    font-size: 3rem;
+    margin-right: 12px;
+  }
+  .resi_product_warning__box{
+    width: 100%;
+  }
+  .resi_product_warning__text{
+    margin: 24px 0;
+    padding: 0 20px;
+    text-align: left;
+  }
+}
 @media(max-width: 680px){
   .resi_product_detail {
     padding: 0;
   }
   .resi_product_info{
-    width: 100%;
     border: 8px solid var(--resistor);
     padding: 24px;
   }
@@ -112,8 +135,14 @@
   .resibutton--shop{
     margin-top: 12px;
   }
-
-  .resi_product_warning__box{
-    width: 100%;
+}
+@media(max-width: 460px){
+  .resibutton--shop{
+    padding:16px 20px;
+    padding-right: 80px;
+  }
+  .resibutton__icon--shop{
+    width: 46px;
+    right: 20px;
   }
 }

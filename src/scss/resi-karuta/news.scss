@@ -60,3 +60,33 @@
     background-color: var(--white);
   }
 }
+
+@media(max-width: 680px){
+  .resinews__list_item {
+    border-radius: 20px;
+  }
+  .resinews__list_item_wrapper{
+    padding: 24px;
+    flex-wrap: wrap;
+  }
+  .resinews__list_item__img{
+    width: 100%;
+  }
+  .resinews__list_item__textbox{
+    padding: 10px 4px 0;
+  }
+}
+@media(max-width: 470px){
+  .resinews__list_item__title {
+    font-size: 1.5rem;
+  }
+  .resinews__twitter_text{
+    font-size: 1.1rem;
+  }
+  .resinews__twitter_link__a {
+    width: 100%;
+  }
+  .resinews__twitter_link_text {
+    padding: 16px 0;
+  }
+}

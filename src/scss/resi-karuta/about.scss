@@ -93,6 +93,7 @@
   .resiabout__img--sp{
     margin: auto;
     display: block;
+    width: 70%;
     &--two{
       padding: 0 20px;
     }
@@ -120,5 +121,10 @@
       width: 340px;
       transform: rotateZ(-15.5deg);
     }
+  }
+}
+@media(max-width: 420px){
+  .resiabout__img--sp{
+    width: 100%;
   }
 }
