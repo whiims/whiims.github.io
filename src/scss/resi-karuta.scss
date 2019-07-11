@@ -17,6 +17,7 @@ body#resi_top {
   background: var(--resi-brown);
   font-size: 1.2rem;
   line-height: 1.6;
+  overflow-x: hidden;
 
   #section-resi-karuta {
     font-family: 'M PLUS Rounded 1c';
