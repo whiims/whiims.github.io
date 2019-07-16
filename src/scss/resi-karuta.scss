@@ -13,7 +13,14 @@
   }
 }
 
-body#resi_top {
+.resi_top_wrapper{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#resi_top {
   background: var(--resi-brown);
   font-size: 1.2rem;
   line-height: 1.6;

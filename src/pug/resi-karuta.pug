@@ -22,234 +22,234 @@ mixin resi_shop_link(title, intax, price, link)
 
 html(lang='ja')
   +head('抵抗カラーコードかるた', "読まれた抵抗値を素早く取れ！ 抵抗のカラーコードをゲーム感覚で覚えてしまおう！")
-  body#resi_top
-    +global_header
-    main#section-resi-karuta
-      .resi_topvisual
-        .resi_topvisual__top
-          .resi_topvisual__top_left
-            .resi_topvisual__logo
-              +img('./images/resi-karuta/resi_logo.svg','抵抗カラーコードかるた ロゴマーク')
-            a(href="#resi_about").resi_topvisual__link.resi_topvisual__link--red
-              +img('./images/resi-karuta/resi_red.png').resi_topvisual__linkimg.resi_topvisual__linkimg--red
-              .resi_topvisual__linktext About
-            a(href="#resi_play").resi_topvisual__link.resi_topvisual__link--orange
-              +img('./images/resi-karuta/resi_orange.png').resi_topvisual__linkimg.resi_topvisual__linkimg--orange
-              .resi_topvisual__linktext 遊び方
-          .resi_topvisual__top_right
-            a(href="#resi_product").resi_topvisual__link.resi_topvisual__link--black
-              +img('./images/resi-karuta/resi_black.png').resi_topvisual__linkimg.resi_topvisual__linkimg--black
-              .resi_topvisual__linktext 商品情報
-            a(href="#resi_news").resi_topvisual__link.resi_topvisual__link--green
-              +img('./images/resi-karuta/resi_green.png').resi_topvisual__linkimg.resi_topvisual__linkimg--green
-              .resi_topvisual__linktext News
-            a(href="#shop_link").resi_topvisual__link.resi_topvisual__link--purple
-              +img('./images/resi-karuta/resi_purple.png').resi_topvisual__linkimg.resi_topvisual__linkimg--purple
-              .resi_topvisual__linktext 購入する
-            a(href="#resi_other_products").resi_topvisual__link.resi_topvisual__link--gray
-              +img('./images/resi-karuta/resi_gray.png').resi_topvisual__linkimg.resi_topvisual__linkimg--gray
-              .resi_topvisual__linktext その他の作品をみる
-        .resi_topvisual__bottom
-          .resi_topvisual__bottom_left
-            +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真').resi_topvisual__photo
-          .resi_topvisual__bottom_right
-            .resi_topvisual__text
-              .resi_topvisual__text_catch
-                | 読まれた
-                span.resi_topvisual__text_catch--strong 抵抗値
-                | を素早く取れ！
-              .resi_topvisual__text_normal
-                p 抵抗のカラーコードを<br/>ゲーム感覚で覚えてしまおう！
-                p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
+  body.resi_top_wrapper
+    .resi_top#resi_top
+      +global_header
+      main#section-resi-karuta
+        .resi_topvisual
+          .resi_topvisual__top
+            .resi_topvisual__top_left
+              .resi_topvisual__logo
+                +img('./images/resi-karuta/resi_logo.svg','抵抗カラーコードかるた ロゴマーク')
+              a(href="#resi_about").resi_topvisual__link.resi_topvisual__link--red
+                +img('./images/resi-karuta/resi_red.png').resi_topvisual__linkimg.resi_topvisual__linkimg--red
+                .resi_topvisual__linktext About
+              a(href="#resi_play").resi_topvisual__link.resi_topvisual__link--orange
+                +img('./images/resi-karuta/resi_orange.png').resi_topvisual__linkimg.resi_topvisual__linkimg--orange
+                .resi_topvisual__linktext 遊び方
+            .resi_topvisual__top_right
+              a(href="#resi_product").resi_topvisual__link.resi_topvisual__link--black
+                +img('./images/resi-karuta/resi_black.png').resi_topvisual__linkimg.resi_topvisual__linkimg--black
+                .resi_topvisual__linktext 商品情報
+              a(href="#resi_news").resi_topvisual__link.resi_topvisual__link--green
+                +img('./images/resi-karuta/resi_green.png').resi_topvisual__linkimg.resi_topvisual__linkimg--green
+                .resi_topvisual__linktext News
+              a(href="#shop_link").resi_topvisual__link.resi_topvisual__link--purple
+                +img('./images/resi-karuta/resi_purple.png').resi_topvisual__linkimg.resi_topvisual__linkimg--purple
+                .resi_topvisual__linktext 購入する
+              a(href="#resi_other_products").resi_topvisual__link.resi_topvisual__link--gray
+                +img('./images/resi-karuta/resi_gray.png').resi_topvisual__linkimg.resi_topvisual__linkimg--gray
+                .resi_topvisual__linktext その他の作品をみる
+          .resi_topvisual__bottom
+            .resi_topvisual__bottom_left
+              +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真').resi_topvisual__photo
+            .resi_topvisual__bottom_right
+              .resi_topvisual__text
+                .resi_topvisual__text_catch
+                  | 読まれた
+                  span.resi_topvisual__text_catch--strong 抵抗値
+                  | を素早く取れ！
+                .resi_topvisual__text_normal
+                  p 抵抗のカラーコードを<br/>ゲーム感覚で覚えてしまおう！
+                  p ウラ面には、電気工学のミニ知識も。<br/>楽しく学べるかるたです！
 
-      section.resisection.resisection__about
-        +resi_section_header('このかるたについて')#resi_about
-        .resiwrapper.resiwrapper__about--one
-          .resiabout__shadow.resiabout__shadow--one
-            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--one__img
-          .resiabout__img.resiabout__img--one
-            +img('./images/resi-karuta/resi_about1.png','かるた取り札オモテ面')
-          .resiabout__text
-            .resi_text__block
-              p 
-              | このかるたの取り札には抵抗値のカラーコードが印刷されています。
-              | <br>では図のかるたの抵抗値は？？
-            .resiabout__img.resiabout__img--one.resiabout__img--sp
+        section.resisection.resisection__about
+          +resi_section_header('このかるたについて')#resi_about
+          .resiwrapper.resiwrapper__about--one
+            .resiabout__shadow.resiabout__shadow--one
+              +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--one__img
+            .resiabout__img.resiabout__img--one
               +img('./images/resi-karuta/resi_about1.png','かるた取り札オモテ面')
-            .resi_text__block
-              p
-              | 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
-              | <br>なかなか初心者には覚えるのが大変な抵抗のカラーコード。
-              | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
+            .resiabout__text
+              .resi_text__block
+                p 
+                | このかるたの取り札には抵抗値のカラーコードが印刷されています。
+                | <br>では図のかるたの抵抗値は？？
+              .resiabout__img.resiabout__img--one.resiabout__img--sp
+                +img('./images/resi-karuta/resi_about1.png','かるた取り札オモテ面')
+              .resi_text__block
+                p
+                | 黄色が４、紫が７、 47×10<sup>4</sup>だから 470[KΩ] です！
+                | <br>なかなか初心者には覚えるのが大変な抵抗のカラーコード。
+                | <br>テストとかもう嫌だよね！ゲーム感覚で覚えてしまおう！！
 
-        .resiwrapper.resiwrapper__about--two
-          .resiabout__shadow.resiabout__shadow--two
-            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--two__img
-          .resiabout__text
-            .resi_text__block
-              p 
-              | 友人や先生と腕試しするのも良し！ 
-              | <br>電気科一年生の教材として活用するのも良し！
-              | <br>ロボコンの交流会などでも盛り上がること間違いなし！
-            .resi_text__block
-              p え？ 難しすぎるって？
-              p 
-              | 大丈夫！ そんなあなたには特別にハンデを差し上げよう！
-              | <br>このかるたには、
-              p:span.resi_strong 抵抗値の読み方がわかるチートシート
-              | が付いてきます！
-              p 
-              | しかも、下のボタンからいくらでもダウンロードできるよ！
-              | <br>何枚でも印刷して覚えて、先生や先輩に勝つのだ！！
-            .resiabout__img.resiabout__img--two.resiabout__img--sp.resiabout__img--sp--two
+          .resiwrapper.resiwrapper__about--two
+            .resiabout__shadow.resiabout__shadow--two
+              +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--two__img
+            .resiabout__text
+              .resi_text__block
+                p 
+                | 友人や先生と腕試しするのも良し！ 
+                | <br>電気科一年生の教材として活用するのも良し！
+                | <br>ロボコンの交流会などでも盛り上がること間違いなし！
+              .resi_text__block
+                p え？ 難しすぎるって？
+                p 
+                | 大丈夫！ そんなあなたには特別にハンデを差し上げよう！
+                | <br>このかるたには、
+                p:span.resi_strong 抵抗値の読み方がわかるチートシート
+                | が付いてきます！
+                p 
+                | しかも、下のボタンからいくらでもダウンロードできるよ！
+                | <br>何枚でも印刷して覚えて、先生や先輩に勝つのだ！！
+              .resiabout__img.resiabout__img--two.resiabout__img--sp.resiabout__img--sp--two
+                +img('./images/resi-karuta/resi_cheatsheet.png','チートシートのイメージ')
+              a(href="./download/resistor-karuta_cheat-sheet.pdf" download="抵抗カラーコードかるた_Cheat_sheet.pdf").resibutton.resibutton--download
+                .resibutton__icon.resibutton__icon--download
+                  +img('./images/resi-karuta/grand.svg')
+                .resibutton__text チートシートをダウンロード
+            .resiabout__img.resiabout__img--two
               +img('./images/resi-karuta/resi_cheatsheet.png','チートシートのイメージ')
-            a(href="./download/resistor-karuta_cheat-sheet.pdf" download="抵抗カラーコードかるた_Cheat_sheet.pdf").resibutton.resibutton--download
-              .resibutton__icon.resibutton__icon--download
-                +img('./images/resi-karuta/grand.svg')
-              .resibutton__text チートシートをダウンロード
-          .resiabout__img.resiabout__img--two
-            +img('./images/resi-karuta/resi_cheatsheet.png','チートシートのイメージ')
 
-        .resiwrapper.resiwrapper__about--three
-          .resiabout__shadow.resiabout__shadow--three
-            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--three__img
-          .resiabout__img.resiabout__img--three
-            +img('./images/resi-karuta/resi_about2.png','かるた取り札ウラ面')
-          .resiabout__text
-            p 
-            | 取り札の裏面にはカラーコードの答えだけじゃなく、
-            p:span.resi_strong 電気工学のミニ知識を１枚ずつ掲載！
-            p.open_space 
-            | やってしまいがちなミスや電気系あるあるネタも収録してます！
-            | <br>取ったかるたの裏面を音読すると、より記憶に残るかも(?)
-
-        .resiwrapper.resiwrapper__about--four
-          .resiabout__shadow.resiabout__shadow--four
-            +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--four__img
-          .resiabout__text.resiabout__text--four
-            p 
-            | 抵抗カラーコードかるたと言ったが、
-            | <br>「取り札が全てカラーコード！」とは言ってないぞ……
-            p: span.resi_strong たまに変化球があるから気をつけろ！
-            p.open_space しかも単位はオーム(Ω)だけとは限らなさそうだ……
-          .resiabout__img.resiabout__img--four
-            +img('./images/resi-karuta/resi_about3.png','変化球なカード')
-
-      section.resisection.resisection__play
-        +resi_section_header('遊び方')#resi_play
-        .resiwrapper.resiwrapper__play.resiwrapper__play--one
-          .resiplay__img.resiplay__img--one
-            +img('./images/resi-karuta/resikaruta_play.png','かるたプレイ中イメージ')
-          .resiplay__text
-            .resi_text__block
+          .resiwrapper.resiwrapper__about--three
+            .resiabout__shadow.resiabout__shadow--three
+              +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--three__img
+            .resiabout__img.resiabout__img--three
+              +img('./images/resi-karuta/resi_about2.png','かるた取り札ウラ面')
+            .resiabout__text
               p 
-              | 普通のかるた同様、[数人のプレイヤー]＋[かるたを読む人] で遊ぶことができます。
-              | <br>取り札の絵が見える面(オモテ)を上にして並べたらスタート！
-            .resi_text__block
+              | 取り札の裏面にはカラーコードの答えだけじゃなく、
+              p:span.resi_strong 電気工学のミニ知識を１枚ずつ掲載！
+              p.open_space 
+              | やってしまいがちなミスや電気系あるあるネタも収録してます！
+              | <br>取ったかるたの裏面を音読すると、より記憶に残るかも(?)
+
+          .resiwrapper.resiwrapper__about--four
+            .resiabout__shadow.resiabout__shadow--four
+              +img('./images/resi-karuta/resi_shadow.svg').resiabout__shadow--four__img
+            .resiabout__text.resiabout__text--four
               p 
-              | 「240オーム、プラスマイナス5%」と読まれたら、素早く「赤黄茶金」のコードの札を取ろう！ チートシートを頼りに探してもOK！
-              | <br>カラーコードが無いものも、抵抗値がわかるようになっていて、探せば見つかるはず。
-              p 最終的に取った枚数の多い人が優勝！！
-        .resiwrapper.resiwrapper__play.resiwrapper__play--two
-          .resiplay__img.resiplay__img--two.resiplay__img--sp
-            +img('./images/resi-karuta/resi_play2.png','かるた読み札オモテ面')
-          .resiplay__text.resiplay__text--two
-            p 読み札は、一文字ずつゆっくり読むのがコツ。
-            p 誤差だけが異なる札もあるので、誤差もちゃんと読んでね。
-            p 上から順番に読み、見つけるのに時間がかかっているようなら、
-              | <br>さらなるヒントとして「赤黄茶金」を読もう。
-          .resiplay__img.resiplay__img--two
-            +img('./images/resi-karuta/resi_play2.png','かるた読み札オモテ面')
+              | 抵抗カラーコードかるたと言ったが、
+              | <br>「取り札が全てカラーコード！」とは言ってないぞ……
+              p: span.resi_strong たまに変化球があるから気をつけろ！
+              p.open_space しかも単位はオーム(Ω)だけとは限らなさそうだ……
+            .resiabout__img.resiabout__img--four
+              +img('./images/resi-karuta/resi_about3.png','変化球なカード')
 
-      section.resisection.resisection__product
-        +resi_section_header('商品情報')#resi_product
-        .resi_product_detail
-          +img('./images/resi-karuta/resi_product1.png','かるたの詳細情報')
-        +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','2,500円','')#shop_link
-          .resi_product_info__sub
-            .resi_product_info__sub__cards 
-              | 計
-              span.resi_product_info__sub__cards--stg 80
-              | 枚
-            .resi_product_info__sub__sheet チートシート付き
-        +resi_shop_link('データ版「抵抗カラーコードかるた」','（税込）','1,000円','')
-          .resi_product_info__sub
-            .resi_product_info__sub__notes
-              p 自分で印刷・切り取りが出来る方用の低価格版です。
-              p データの二次配布・販売等を禁止します。良心の範囲内でご使用ください。
-        .resi_product_warning
-          .resi_product_warning__box
-            +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
-            .resi_product_warning__box_text ご注意
-            +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
-          .resi_product_warning__text
-            p:span.resi_strong 「遊戯部すずき組」さんの「Resistor COLOR CODE」とは別の作品となります。
-            p 販売にあたって遊戯部すずき組さんには確認済み、快諾済みでございます。
+        section.resisection.resisection__play
+          +resi_section_header('遊び方')#resi_play
+          .resiwrapper.resiwrapper__play.resiwrapper__play--one
+            .resiplay__img.resiplay__img--one
+              +img('./images/resi-karuta/resikaruta_play.png','かるたプレイ中イメージ')
+            .resiplay__text
+              .resi_text__block
+                p 
+                | 普通のかるた同様、[数人のプレイヤー]＋[かるたを読む人] で遊ぶことができます。
+                | <br>取り札の絵が見える面(オモテ)を上にして並べたらスタート！
+              .resi_text__block
+                p 
+                | 「240オーム、プラスマイナス5%」と読まれたら、素早く「赤黄茶金」のコードの札を取ろう！ チートシートを頼りに探してもOK！
+                | <br>カラーコードが無いものも、抵抗値がわかるようになっていて、探せば見つかるはず。
+                p 最終的に取った枚数の多い人が優勝！！
+          .resiwrapper.resiwrapper__play.resiwrapper__play--two
+            .resiplay__img.resiplay__img--two.resiplay__img--sp
+              +img('./images/resi-karuta/resi_play2.png','かるた読み札オモテ面')
+            .resiplay__text.resiplay__text--two
+              p 読み札は、一文字ずつゆっくり読むのがコツ。
+              p 誤差だけが異なる札もあるので、誤差もちゃんと読んでね。
+              p 上から順番に読み、見つけるのに時間がかかっているようなら、
+                | <br>さらなるヒントとして「赤黄茶金」を読もう。
+            .resiplay__img.resiplay__img--two
+              +img('./images/resi-karuta/resi_play2.png','かるた読み札オモテ面')
 
-      section.resisection.resisection__news
-        +resi_section_header('News')#resi_news
-        .resinews
-          ul.resinews__list
-            li.resinews__list_item
-              a(href="https://gishohaku.dev/").resinews__list_item_wrapper
-                .resinews__list_item__img
-                  +img('./images/resi-karuta/gishohaku.png','技術同人誌博覧会')
-                .resinews__list_item__textbox
-                  .resinews__list_item__days 2019/07/27
-                  .resinews__list_item__title 技術書同人誌博覧会に出展！
-                  .resinews__list_item__description
-                    p 2019.07.27(Sat.)に東京都大田区産業プラザPiOで開催される、技術書同人誌博覧会にwhiimsとして出展します！
-                    p その他、プログラミング言語かるたや、物理版のGit学習ガイドブック等も販売します。
-          .resinews__twitter
-            .resinews__twitter_text Twitterハッシュタグも是非チェック！
-            .resinews__twitter_link
-              a(href="https://twitter.com/search?src=typd&q=%23%E6%8A%B5%E6%8A%97%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8B%E3%82%8B%E3%81%9F").resinews__twitter_link__a
-                .resinews__twitter_link_text ＃抵抗カラーコードかるた
-            .resinews__twitter_text ご意見・ご感想待っております！
+        section.resisection.resisection__product
+          +resi_section_header('商品情報')#resi_product
+          .resi_product_detail
+            +img('./images/resi-karuta/resi_product1.png','かるたの詳細情報')
+          +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','2,500円','')#shop_link
+            .resi_product_info__sub
+              .resi_product_info__sub__cards 
+                | 計
+                span.resi_product_info__sub__cards--stg 80
+                | 枚
+              .resi_product_info__sub__sheet チートシート付き
+          +resi_shop_link('データ版「抵抗カラーコードかるた」','（税込）','1,000円','')
+            .resi_product_info__sub
+              .resi_product_info__sub__notes
+                p 自分で印刷・切り取りが出来る方用の低価格版です。学生に優しい！
+                p データの二次配布・販売等を禁止します。良心の範囲内でご使用ください。
+          .resi_product_warning
+            .resi_product_warning__box
+              +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
+              .resi_product_warning__box_text ご注意
+              +img('./images/resi-karuta/attention.svg','!').resi_product_warning__box_img
+            .resi_product_warning__text
+              p:span.resi_strong 「遊戯部すずき組」さんの「Resistor COLOR CODE」とは別の作品となります。
+              p 販売にあたって遊戯部すずき組さんには確認済み、快諾済みでございます。
 
-      section.resisection.resisection__news
-        +resi_section_header('whiimsのその他の作品')#resi_other_products
-        .resi_others
-          .resi_others__item
-            a(href="http://yamasy.info/programming-karuta/").resi_others__item_a
-              .resi_others__item_link
-                +img('./images/resi-karuta/prokaruta.png','プログラミング言語かるた')
-                .resi_others__item_link_text プログラミング言語かるた
-          .resi_others__item
-            a(href="./git-karuta").resi_others__item_a
-              .resi_others__item_link
-                +img('./images/resi-karuta/gitkaruta.png','Gitコマンドかるた')
-                .resi_others__item_link_text Gitコマンドかるた
-          .resi_others__item.resi_others__item--small
-            .resi_others__otheritems
-              .resi_others__otheritems_circle
-              .resi_others__otheritems_circle
-              .resi_others__otheritems_circle
-            a(href="./").resi_others__whiims_link
-              .resi_others__whiims_link_text.resi_others__whiims_link_text--big whiims
-              .resi_others__whiims_link_text のサイトへ
-      
-      section.resisection.resisection__spthx
-        +resi_section_header('Special Thanks')#resisection__spthx
-        .resi_spthx
-          .resi_spthx__text 抵抗カラーコードかるた制作にご協力いただきました。ありがとうございます！（2019.7現在）
-          ul.resi_spthx__lists
-            li.resi_spthx__list 
-              | 奈良高専 電気工学科： 頭師孝拓 先生
-            li.resi_spthx__list 
-              | 茨城高専 電子制御工学科卒： 
-              a(href="https://twitter.com/hamashigi") はましぎ（@hamashigi）
-              | 君
-            li.resi_spthx__list
-              | 豊橋技術科学大学工学部 電気・電子情報工学課程： 
-              a(href="https://twitter.com/kyumina8376") kyumina（@kyumina8376）
-              | 君
-    a(href="#resi_top").linktotop
-      .linktotop_text ▲
-      .linktotop_popup TOP
-      
-    +sns
-    script(src="./script/smooth-scroll.polyfills.min.js")
-    script(src="./script/resi-karuta.js")
-    +scripts
-    +global_footer
+        section.resisection.resisection__news
+          +resi_section_header('News')#resi_news
+          .resinews
+            ul.resinews__list
+              li.resinews__list_item
+                a(href="https://gishohaku.dev/").resinews__list_item_wrapper
+                  .resinews__list_item__img
+                    +img('./images/resi-karuta/gishohaku.png','技術同人誌博覧会')
+                  .resinews__list_item__textbox
+                    .resinews__list_item__days 2019/07/27
+                    .resinews__list_item__title 技術書同人誌博覧会に出展！
+                    .resinews__list_item__description
+                      p 2019.07.27(Sat.)に東京都大田区産業プラザPiOで開催される、技術書同人誌博覧会にwhiimsとして出展します！
+                      p その他、プログラミング言語かるたや、物理版のGit学習ガイドブック等も販売します。
+            .resinews__twitter
+              .resinews__twitter_text Twitterハッシュタグも是非チェック！
+              .resinews__twitter_link
+                a(href="https://twitter.com/search?src=typd&q=%23%E6%8A%B5%E6%8A%97%E3%82%AB%E3%83%A9%E3%83%BC%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8B%E3%82%8B%E3%81%9F").resinews__twitter_link__a
+                  .resinews__twitter_link_text ＃抵抗カラーコードかるた
+              .resinews__twitter_text ご意見・ご感想待っております！
+
+        section.resisection.resisection__news
+          +resi_section_header('whiimsのその他の作品')#resi_other_products
+          .resi_others
+            .resi_others__item
+              a(href="http://yamasy.info/programming-karuta/").resi_others__item_a
+                .resi_others__item_link
+                  +img('./images/resi-karuta/prokaruta.png','プログラミング言語かるた')
+                  .resi_others__item_link_text プログラミング言語かるた
+            .resi_others__item
+              a(href="./git-karuta").resi_others__item_a
+                .resi_others__item_link
+                  +img('./images/resi-karuta/gitkaruta.png','Gitコマンドかるた')
+                  .resi_others__item_link_text Gitコマンドかるた
+            .resi_others__item.resi_others__item--small
+              .resi_others__otheritems
+                .resi_others__otheritems_circle
+                .resi_others__otheritems_circle
+                .resi_others__otheritems_circle
+              a(href="./").resi_others__whiims_link
+                .resi_others__whiims_link_text.resi_others__whiims_link_text--big whiims
+                .resi_others__whiims_link_text のサイトへ
+        
+        section.resisection.resisection__spthx
+          +resi_section_header('Special Thanks')#resisection__spthx
+          .resi_spthx
+            .resi_spthx__text 抵抗カラーコードかるた制作にご協力いただきました。ありがとうございます！（2019.7現在）
+            ul.resi_spthx__lists
+              li.resi_spthx__list 
+                | 奈良高専 電気工学科： 頭師孝拓 先生
+              li.resi_spthx__list 
+                | 茨城高専 電子制御工学科卒： 
+                a(href="https://twitter.com/hamashigi") はましぎ（@hamashigi）
+                | 君
+              li.resi_spthx__list
+                | 豊橋技術科学大学工学部 電気・電子情報工学課程： 
+                a(href="https://twitter.com/kyumina8376") kyumina（@kyumina8376）
+                | 君
+      a(href="#resi_top").linktotop
+        .linktotop_text ▲
+        .linktotop_popup TOP
+        
+      +sns
+      script(src="./script/smooth-scroll.polyfills.min.js")
+      script(src="./script/resi-karuta.js")
+      +global_footer
