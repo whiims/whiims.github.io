@@ -15,7 +15,10 @@ mixin resi_shop_link(title, intax, price, link)
         .resi_product_info__intax= intax
         .resi_product_info__price_data= price
       .resi_product_info__link
-        a(href=link).resibutton.resibutton--shop
+        //- ここはあとで消す
+        .resibutton.resibutton--shop
+          .resibutton__text Coming soon！
+        //- a(href=link).resibutton.resibutton--shop
           .resibutton__icon.resibutton__icon--shop
             +img('./images/resi-karuta/diode.svg')
           .resibutton__text ショップで購入
