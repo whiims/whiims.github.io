@@ -152,6 +152,7 @@ a.boothbanner {
 @media(max-width: 620px) {
   .gitsection {
     margin: 40px calc((100% - var(--section)) / 2);
+    padding: 10px;
   }
 }
 
@@ -206,6 +207,9 @@ a.boothbanner {
 }
 
 @media(max-width: 620px) {
+  .githover {
+    padding: 0;
+  }
   .gitsample .gitsample__item:not(:last-child) {
     border-bottom: 1px solid var(--lightbrown);
   }

@@ -31,3 +31,8 @@
     --section: 80%;
   }
 }
+@media(max-width: 480px) {
+  :root {
+    --section: 90%;
+  }
+}
