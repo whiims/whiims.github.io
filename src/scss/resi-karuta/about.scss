@@ -1,0 +1,131 @@
+  //resiabout
+
+  .resiwrapper__about {
+    &--one, &--three{
+      margin-top: 40px;
+    }
+    &--four {
+      margin-bottom: 10px;
+    }
+  }
+  .resiabout__img{
+    margin: auto;
+    &--one, &--three{
+      width: 400px;
+    }
+    &--four {
+      margin-top: -30px;
+      width: 600px;
+    }
+  }
+  .resiabout__text {
+    color: var(--resi-darkpink);
+    margin: 30px 0;
+    padding-left: 24px;
+    line-height: 1.8;
+    &--four {
+      padding-top: 20px;
+    }
+  }
+  .resiabout__img--sp{
+    display: none;
+  }
+
+  .resiabout__shadow {
+    position: absolute;
+    z-index: -1;
+    &--one {
+      top: 20px;
+      left: 36%;
+      width: 340px;
+      transform: rotateZ(20deg);
+    }
+    &--two {
+      top: 80px;
+      left: 6%;
+      width: 600px;
+      transform: rotateZ(-17deg);
+    }
+    &--three {
+      top: -10px;
+      left: 28%;
+      width: 340px;
+      transform: rotateZ(16deg);
+    }
+    &--four {
+      top: 60px;
+      left: 6%;
+      width: 340px;
+      transform: rotateZ(-15.5deg);
+    }
+  }
+@media(max-width: 680px){
+  .resiwrapper__about {
+    &--one{
+      margin-top: 0;
+    }
+    &--three{
+      flex-wrap:wrap;
+    }
+    &--four {
+      margin-bottom: 10px;
+      flex-wrap:wrap;
+    }
+  }
+  .resiabout__img{
+    &--one,&--two{
+      display: none;
+    }
+    &--three{
+      margin: auto;
+    }
+    &--four{
+      margin-top:0;
+    }
+  }
+  .resiabout__text {
+    margin: 10px 0;
+    padding: 0 8px;
+    line-height: 1.7;
+    &--four {
+      padding-top: 20px;
+    }
+  }
+  .resiabout__img--sp{
+    margin: auto;
+    display: block;
+    width: 70%;
+    &--two{
+      padding: 0 20px;
+    }
+  }
+  .resiabout__shadow {
+    &--one {
+      top: 110px;
+      margin:auto;
+      right: 60px;
+    }
+    &--two {
+      top: 60px;
+      left: 6%;
+      width: 500px;
+    }
+    &--three {
+      top: -10px;
+      left: 28%;
+      width: 340px;
+      transform: rotateZ(16deg);
+    }
+    &--four {
+      top: 60px;
+      left: 6%;
+      width: 340px;
+      transform: rotateZ(-15.5deg);
+    }
+  }
+}
+@media(max-width: 420px){
+  .resiabout__img--sp{
+    width: 100%;
+  }
+}

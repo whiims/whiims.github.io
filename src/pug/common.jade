@@ -29,8 +29,12 @@ mixin head(title, description)
 
     if title == 'Gitコマンドかるた | whiims'
       link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css")
-      meta(property='og:image' content='https://whiims.github.io/images/git-karuta.jpg')
+      meta(property='og:image' content='https://whiims.github.io/images/Git-CK_OGP.png')
       meta(property='og:url' content='http://whiims.github.io/git-karuta.html')
+    else if title == '抵抗カラーコードかるた | whiims'
+      link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap")
+      meta(property='og:image' content='https://whiims.github.io/images/resi-karuta/resikaruta_ogp.png')
+      meta(property='og:url' content='http://whiims.github.io/resi-karuta')
     else
       meta(property='og:image' content='https://whiims.github.io/images/whiims-ogp.jpg')
       meta(property='og:url' content='http://whiims.github.io/')
@@ -45,8 +49,6 @@ mixin global_header
         +logo.globalheader__logo
 
 mixin scripts
-  script(src='./src/script/main.js')
-
   script(async src="https://www.googletagmanager.com/gtag/js?id=UA-68509620-5")
   script.
     window.dataLayer = window.dataLayer || [];
@@ -61,6 +63,7 @@ mixin sns
       +square_twiiter
     a#facebook(href="" target="_blank")
       +square_facebook
+  script(src='./src/script/sns.js')
 
 mixin global_footer
   footer.globalfooter

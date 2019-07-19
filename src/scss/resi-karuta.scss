@@ -1,0 +1,192 @@
+
+:root{
+  --resi-section: 70%;
+}
+@media(max-width: 1300px) {
+  :root {
+    --resi-section: 84%;
+  }
+}
+@media(max-width: 1100px) {
+  :root {
+    --resi-section: 96%;
+  }
+}
+
+.resi_top_wrapper{
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#resi_top {
+  background: var(--resi-brown);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+
+  #section-resi-karuta {
+    font-family: 'M PLUS Rounded 1c';
+    margin: 60px calc((100% - var(--resi-section)) / 2);
+  }
+  @media(max-width: 620px) {
+    #section-resi-karuta {
+      margin: 40px calc((100% - var(--resi-section)) / 2);
+    }
+  }
+
+  .resi_text__block {
+    padding: 12px 0;
+  }
+  .resi_strong {
+    position: relative;
+    font-weight: 700;
+    background: linear-gradient(0deg, var(--resi-yellow) 0%, var(--resi-yellow) 36%,transparent 36%,transparent 100%);
+  }
+  .open_space {
+    margin-top: 12px;
+  }
+
+  //resisection
+  .resisection{
+    padding: 4px;
+    margin: 30px 0;
+  }
+  .resisection__header {
+    width: 100%;
+    background: var(--white);
+    padding: 18px 32px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+  }
+  .resisection__header--title{
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  //resi wrapper
+  .resiwrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  //resibutton
+
+  .resibutton {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 20px 40px;
+    padding-right: 110px;
+    background: var(--resi-darkpink);
+    outline: none;
+    box-sizing: border-box;
+    transition: background-color .2s ease-out;
+    border: none;
+    cursor: pointer;
+    &--download {
+      margin-top: 60px;
+    }
+    &:hover{
+      background: var(--resi-pink);
+    }
+    &:active{
+      opacity: .8;
+      transform: translateY(1px);
+    }
+  }
+  .resibutton__icon {
+    position: absolute;
+    display: block;
+    margin: auto;
+    height: min-content;
+    &--download {
+      width: 36px;
+      top: 0;
+      right: 24px;
+    }
+    &--shop {
+      width: 52px;
+      top: 0;
+      bottom: 0;
+      right: 30px;
+    }
+  }
+  .resibutton__text {
+    font-family: 'M PLUS Rounded 1c';
+    color: var(--white);
+    font-size: 1.2rem;
+  }
+
+  //linktotop
+  .linktotop {
+    position: fixed;
+    bottom: 100px;
+    right: 5vw;
+    width: 40px;
+    height: 40px;
+    border: 4.5px solid var(--resi-pink);
+    text-align: center;
+    color: var(--resi-pink);
+    &:hover{
+      .linktotop_popup {
+        display: block;
+      }
+    }
+  }
+  .linktotop_popup {
+    position: fixed;
+    bottom: 106px;
+    right: calc(5vw + 48px);
+    width: auto;
+    height: auto;
+    font-weight: 700;
+    display: none;
+  }
+  @media(max-width: 920px){
+
+  }
+  @media(max-width: 767px){
+    .linktotop {
+      right: 3vw;
+      bottom: 128px;
+    }
+    .linktotop_popup{
+      bottom: 170px;
+      right: calc(3vw + 1px);
+    }
+  }
+  @media(max-width: 680px){
+    font-size: 1.1rem;
+    br {
+      display: none;
+    }
+    .resibutton {
+      &--download {
+        margin: auto;
+        margin-top: 18px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+  @media(max-width: 460px){
+    .resibutton--download {
+      padding:16px 20px;
+      padding-right: 60px;
+    }
+    .resibutton__icon--download{
+      width: 30px;
+      right: 16px;
+    }
+  }
+  @import "resi-karuta/topvisual";
+  @import "resi-karuta/about";
+  @import "resi-karuta/play";
+  @import "resi-karuta/product";
+  @import "resi-karuta/news";
+  @import "resi-karuta/others";
+  @import "resi-karuta/spthx";
+}
