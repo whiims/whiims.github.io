@@ -18,6 +18,7 @@
     <meta content="@yamasy1549" name="twitter:site"/>
     <meta name="theme-color" content="#000000"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&amp;display=swap"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"/>
     <meta property="og:image" content="https://whiims.github.io/images/resi-karuta/resikaruta_ogp.png"/>
     <meta property="og:url" content="http://whiims.github.io/resi-karuta"/>
     <link rel="stylesheet" href="./main.css"/>
@@ -51,7 +52,24 @@
                 <div class="resi_topvisual__linktext">その他の作品をみる</div></a></div>
           </div>
           <div class="resi_topvisual__bottom">
-            <div class="resi_topvisual__bottom_left"><img src="./images/resi-karuta/resi-karuta.jpg" alt="抵抗カラーコードかるたの写真" class="resi_topvisual__photo"/>
+            <div class="resi_topvisual__bottom_left">
+              <div class="swiper-container__box">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./images/resi-karuta/resikaruta_img1.jpg" alt="抵抗カラーコードかるたの写真1" class="resi_topvisual__photo"/>
+                    </div>
+                    <div class="swiper-slide"><img src="./images/resi-karuta/resikaruta_img2.jpg" alt="抵抗カラーコードかるたの写真2" class="resi_topvisual__photo"/>
+                    </div>
+                    <div class="swiper-slide"><img src="./images/resi-karuta/resikaruta_img3.jpg" alt="抵抗カラーコードかるたの写真3" class="resi_topvisual__photo"/>
+                    </div>
+                    <div class="swiper-slide"><img src="./images/resi-karuta/resi-karuta.jpg" alt="抵抗カラーコードかるたの写真4（プロトタイプ段階のもの）" class="resi_topvisual__photo"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"><</div>
+              <div class="swiper-button-next">></div>
             </div>
             <div class="resi_topvisual__bottom_right">
               <div class="resi_topvisual__text">
@@ -105,7 +123,7 @@
                 <br>何枚でも印刷して覚えて、先生や先輩に勝つのだ！！
               </div>
               <div class="resiabout__img resiabout__img--two resiabout__img--sp resiabout__img--sp--two"><img src="./images/resi-karuta/resi_cheatsheet.png" alt="チートシートのイメージ"/>
-              </div><a href="./src/download/resistor-karuta_cheat-sheet.pdf" download="抵抗カラーコードかるた_Cheat_sheet.pdf" class="resibutton resibutton--download">
+              </div><a href="./src/download/resistor-karuta_cheat-sheet.pdf" target="blank_" class="resibutton resibutton--download">
                 <div class="resibutton__icon resibutton__icon--download"><img src="./images/resi-karuta/grand.svg"/>
                 </div>
                 <div class="resibutton__text">チートシートをダウンロード</div></a>
@@ -314,6 +332,7 @@
       </div>
       <script src="./src/script/sns.js"></script>
       <script src="./src/script/smooth-scroll.polyfills.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
       <script src="./src/script/resi-karuta.js"></script>
       <footer class="globalfooter"><a href="/">
           <svg version="1.1" viewBox="0 0 240.24 69.12" xml:space="preserve" class="globalfooter__logo">
