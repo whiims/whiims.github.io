@@ -55,7 +55,20 @@ html(lang='ja')
                 .resi_topvisual__linktext その他の作品をみる
           .resi_topvisual__bottom
             .resi_topvisual__bottom_left
-              +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真').resi_topvisual__photo
+              .swiper-container__box
+                .swiper-container
+                  .swiper-wrapper
+                    .swiper-slide
+                      +img('./images/resi-karuta/resikaruta_img1.jpg','抵抗カラーコードかるたの写真1').resi_topvisual__photo
+                    .swiper-slide
+                      +img('./images/resi-karuta/resikaruta_img2.jpg','抵抗カラーコードかるたの写真2').resi_topvisual__photo
+                    .swiper-slide
+                      +img('./images/resi-karuta/resikaruta_img3.jpg','抵抗カラーコードかるたの写真3').resi_topvisual__photo
+                    .swiper-slide
+                      +img('./images/resi-karuta/resi-karuta.jpg','抵抗カラーコードかるたの写真4（プロトタイプ段階のもの）').resi_topvisual__photo
+              .swiper-pagination
+              .swiper-button-prev <
+              .swiper-button-next >
             .resi_topvisual__bottom_right
               .resi_topvisual__text
                 .resi_topvisual__text_catch
@@ -254,5 +267,6 @@ html(lang='ja')
         
       +sns
       script(src="./src/script/smooth-scroll.polyfills.min.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js")
       script(src="./src/script/resi-karuta.js")
       +global_footer
