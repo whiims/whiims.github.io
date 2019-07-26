@@ -15,10 +15,7 @@ mixin resi_shop_link(title, intax, price, link)
         .resi_product_info__intax= intax
         .resi_product_info__price_data= price
       .resi_product_info__link
-        //- ここはあとで消す
-        .resibutton.resibutton--shop
-          .resibutton__text Coming soon！
-        //- a(href=link).resibutton.resibutton--shop
+        a(href=link).resibutton.resibutton--shop
           .resibutton__icon.resibutton__icon--shop
             +img('./images/resi-karuta/diode.svg')
           .resibutton__text ショップで購入
@@ -182,14 +179,14 @@ html(lang='ja')
           +resi_section_header('商品情報')#resi_product
           .resi_product_detail
             +img('./images/resi-karuta/resi_product1.png','かるたの詳細情報')
-          +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','2,500円','')#shop_link
+          +resi_shop_link('物理版「抵抗カラーコードかるた」','（税込・送料別）','2,500円','https://whiims.booth.pm/items/1475686')#shop_link
             .resi_product_info__sub
               .resi_product_info__sub__cards 
                 | 計
                 span.resi_product_info__sub__cards--stg 80
                 | 枚
               .resi_product_info__sub__sheet チートシート付き
-          +resi_shop_link('データ版「抵抗カラーコードかるた」','（税込）','1,500円','')
+          +resi_shop_link('データ版「抵抗カラーコードかるた」','（税込）','1,500円','https://whiims.booth.pm/items/1476666')
             .resi_product_info__sub
               .resi_product_info__sub__notes
                 p 自分で印刷・切り取りが出来る方用の低価格版です。学生に優しい！
