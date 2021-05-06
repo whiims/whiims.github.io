@@ -28,8 +28,9 @@ mixin head(title, description)
     meta(name='theme-color' content='#000000')
 
     if title == 'Gitコマンドかるた | whiims'
-      link(rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/mplus1p.css")
-      meta(property='og:image' content='https://whiims.github.io/images/Git-CK_OGP.png')
+      link(rel="preconnect" href="https://fonts.gstatic.com")
+      link(href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;800&family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet")
+      meta(property="og:image" content="https://whiims.github.io/images/gitkaruta-top.png")
       meta(property='og:url' content='http://whiims.github.io/git-karuta.html')
     else if title == '抵抗カラーコードかるた | whiims'
       link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700&display=swap")
@@ -37,6 +38,8 @@ mixin head(title, description)
       meta(property='og:image' content='https://whiims.github.io/images/resi-karuta/resikaruta_ogp.png')
       meta(property='og:url' content='http://whiims.github.io/resi-karuta')
     else
+      link(rel="preconnect" href="https://fonts.gstatic.com")
+      link(href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet")
       meta(property='og:image' content='https://whiims.github.io/images/whiims-ogp.jpg')
       meta(property='og:url' content='http://whiims.github.io/')
 
